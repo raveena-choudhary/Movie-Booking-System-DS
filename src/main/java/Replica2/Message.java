@@ -1,4 +1,4 @@
-package Replica5;
+package Replica2;
 
 public class Message {
 	public String FrontEndIpAddress,MethodCalled , MessageType, userID, newMovieId, newMovieName, oldMovieId, oldMovieName;
@@ -13,6 +13,7 @@ public class Message {
 		this.MethodCalled = MethodCalled;
 		this.userID = userID; 
 		this.newMovieId = newMovieId;
+		System.out.println("Movie id in message sent: " + this.newMovieId);
 		this.newMovieName = newMovieName;
 		this.oldMovieId = oldMovieId;
 		this.oldMovieName = oldMovieName;

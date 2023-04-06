@@ -1,16 +1,17 @@
-package Replica3.movieTicketBookingSystem.user;
+package Replica2.movieTicketBookingSystem.user;
 
-import Replica3.movieTicketBookingSystem.MovieTicketBookingInterface;
-import Replica3.util.booking.Booking;
-import Replica3.util.booking.Movie;
-import Replica3.util.db.LoginDBMovieTicketSystem;
-import Replica3.util.db.MovieTicketBookingDB;
-import util.Enums.ServerEnum;
-import util.Enums.SlotEnum;
+import Replica2.movieTicketBookingSystem.MovieTicketBookingInterface;
+import Replica2.util.UDPCommunication;
+import Replica2.util.booking.Booking;
+import Replica2.util.booking.Movie;
+import Replica2.util.db.LoginDBMovieTicketSystem;
+import Replica2.util.db.MovieTicketBookingDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import Replica3.util.booking.BookingUtility;
-import Replica3.util.UDPCommunication;
+import util.Enums.ServerEnum;
+import util.Enums.SlotEnum;
+import Replica1.util.booking.BookingUtility;
+
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
@@ -25,9 +26,9 @@ public abstract class User extends UnicastRemoteObject implements MovieTicketBoo
 
     protected String hostname = "";
     protected String port = "";
-    protected static final String ATWATER_SERVER_PORT = "7000";
-    protected static final String VERDUN_SERVER_PORT = "7001";
-    protected static final String OUTREMONT_SERVER_PORT = "7002";
+    protected static final String ATWATER_SERVER_PORT = "6000";
+    protected static final String VERDUN_SERVER_PORT = "6001";
+    protected static final String OUTREMONT_SERVER_PORT = "6002";
 
     private static final int ACCEPTED_MOVIE_COUNT = 3;
 

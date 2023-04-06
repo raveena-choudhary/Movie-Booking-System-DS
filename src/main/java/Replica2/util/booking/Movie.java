@@ -1,4 +1,4 @@
-package Replica3.util.booking;
+package Replica2.util.booking;
 
 import util.Enums.ServerEnum;
 import util.Enums.SlotEnum;

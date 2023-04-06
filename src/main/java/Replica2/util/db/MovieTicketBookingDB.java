@@ -1,7 +1,7 @@
-package Replica3.util.db;
+package Replica2.util.db;
 
-import Replica3.util.booking.Booking;
-import Replica3.util.booking.Movie;
+import Replica2.util.booking.Booking;
+import Replica2.util.booking.Movie;
 import util.Enums.ServerEnum;
 import util.Enums.SlotEnum;
 

@@ -1,6 +1,6 @@
-package Replica3.movieTicketBookingSystem.user;
+package Replica2.movieTicketBookingSystem.user;
 
-import Replica3.util.db.MovieTicketBookingDB;
+import Replica2.util.db.MovieTicketBookingDB;
 
 import java.rmi.RemoteException;
 

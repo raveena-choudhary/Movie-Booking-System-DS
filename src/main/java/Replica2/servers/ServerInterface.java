@@ -1,11 +1,11 @@
-package Replica3.servers;
+package Replica2.servers;
 
-import Replica3.movieTicketBookingSystem.MovieTicketBookingInterface;
-import Replica3.movieTicketBookingSystem.user.Admin;
-import Replica3.movieTicketBookingSystem.user.Customer;
-import Replica3.movieTicketBookingSystem.user.User;
-import Replica3.util.db.LoginDBMovieTicketSystem;
-import Replica3.util.db.MovieTicketBookingDB;
+import Replica2.movieTicketBookingSystem.MovieTicketBookingInterface;
+import Replica2.movieTicketBookingSystem.user.Admin;
+import Replica2.movieTicketBookingSystem.user.Customer;
+import Replica2.movieTicketBookingSystem.user.User;
+import Replica2.util.db.LoginDBMovieTicketSystem;
+import Replica2.util.db.MovieTicketBookingDB;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;

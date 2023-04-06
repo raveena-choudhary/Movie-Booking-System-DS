@@ -1,8 +1,8 @@
-package Replica3.servers;
+package Replica2.servers;
 
-import Replica3.movieTicketBookingSystem.user.Admin;
-import Replica3.util.db.LoginDBMovieTicketSystem;
-import Replica3.util.db.MovieTicketBookingDB;
+import Replica2.movieTicketBookingSystem.user.Admin;
+import Replica2.util.db.LoginDBMovieTicketSystem;
+import Replica2.util.db.MovieTicketBookingDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import util.login.UserInfo;
@@ -10,27 +10,37 @@ import util.login.UserInfo;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 
-public class VerdunServer implements ServerInterface {
 
-	private static final int portNum = 7001;
-	private static final String registryURL = "rmi://localhost:" + portNum + "/verdun";
+//Server program
+public class AtwaterServer implements ServerInterface {
+
+	private static final Logger LOGGER = LogManager.getLogger("atwater");
+	private static final int portNum = 6000;
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
-
-	private static final Logger LOGGER = LogManager.getLogger("verdun");
+	private static final String registryURL = "rmi://localhost:" + portNum + "/atwater";
 
 	public static Admin user = null;
-	public static void main(String[] args) throws RemoteException {
-		VerdunServer verdunServer = new VerdunServer();
-		user = new Admin(verdunServer.movieDB,"localhost",String.valueOf(portNum));
+
+	public static void main(String[] args) throws NumberFormatException, RemoteException {
+
+//		InputStreamReader is = new InputStreamReader(System.in);
+//		BufferedReader br = new BufferedReader(is);
+
+		AtwaterServer atwaterServer = new AtwaterServer();
+		user = new Admin(atwaterServer.movieDB,"localhost",String.valueOf(portNum)); // this is created to access method in User class
+
+		LOGGER.info("Setup user started");
 		LOGGER.info("Pre-defined users setup started for server");
-		verdunServer.setupUsers();
+		atwaterServer.setupUsers();
+		System.out.println("Setup user done");
 		LOGGER.info("Pre-defined users setup done for server");
+
 		try {
-			LOGGER.info("Starting Verdun Server ...");
-			Runnable task = () -> { // to handle concurrency
+			LOGGER.info("Atwater server started at port: " + portNum);
+			Runnable task = () -> {
 				try {
-					verdunServer.register(portNum, registryURL, verdunServer.movieDB);
+					atwaterServer.register(portNum, registryURL,atwaterServer.movieDB);
 				} catch (RemoteException e) {
 					throw new RuntimeException(e);
 				} catch (MalformedURLException e) {
@@ -39,38 +49,38 @@ public class VerdunServer implements ServerInterface {
 			};
 			Thread thread = new Thread(task);
 			thread.start();
-			verdunServer.receive(portNum,LOGGER,verdunServer.movieDB,verdunServer.userDB,user);
-		} catch (Exception re) {
-			System.out.println("Exception in Verdun.main: " + re);
-		}
 
-		LOGGER.info("Verdun Server started");
+
+			atwaterServer.receive(portNum, LOGGER, atwaterServer.movieDB, atwaterServer.userDB, user);
+
+
+		} catch (Exception re) {
+			System.out.println("Exception in Atwater.main: " + re);
+		}
 	}
 
 	private void setupUsers(){
+			UserInfo user1 = new UserInfo();
+			user1.setUsername("ATWA1234");
+			user1.setPassword("xyz");
+			user1.setType("A");
+			UserInfo user4 = new UserInfo();
+			user4.setUsername("ATWC7075");
+			user4.setPassword("xyz");
+			user4.setType("C");
+			userDB.addUser(user1);
+			userDB.addUser(user4);
 
-		UserInfo user2 = new UserInfo();
-		user2.setUsername("VERA1234");
-		user2.setPassword("xyz");
-		user2.setType("A");
-
-		UserInfo user6 = new UserInfo();
-		user6.setUsername("VERC7075");
-		user6.setPassword("xyz");
-		user6.setType("C");
-
-		userDB.addUser(user2);
-		userDB.addUser(user6);
-
-//		LOGGER.info("Users setup for verdun Server");
 	}
 
+	//move to interface
 //	public void receive() {
 //		DatagramSocket aSocket = null;
 //		try {
 //			aSocket = new DatagramSocket(portNum);
+//
 //			while(true) {
-//				byte[] buffer = new byte[1000];
+//				byte[] buffer = new byte[1000]; //clear buffer for every request
 //				DatagramPacket request = new DatagramPacket(buffer, buffer.length);
 //				aSocket.receive(request);
 //				LOGGER.info("Request received");
@@ -78,20 +88,19 @@ public class VerdunServer implements ServerInterface {
 //				// Choice of the method to be invoked, and param if any
 //				String responseMethodName = response.substring(0,response.indexOf(":")).trim();
 //				String responseParam =  new String(request.getData()).substring(response.indexOf(":")+1).trim();
-//				String responseString = "";
 //				String responseParameters = new String(request.getData()).substring(response.indexOf(":")+1).trim();
+//
+//				String responseString = "";
 //
 //				if(responseMethodName.equalsIgnoreCase("getAvailableShowsForMovie") && responseParam!=null) {
 ////					String responseString = "";
 //					responseString = movieDB.getAvailableShowsForMovie(responseParam);//to get all shows available for a movie
-////					DatagramPacket reply = new DatagramPacket(responseString.getBytes(), responseString.length(), request.getAddress(), request.getPort());
-////					aSocket.send(reply);
 //					LOGGER.info("Available shows for movie " + responseParam + " are: " + responseString);
+//
 //					LOGGER.info("Response sent for available shows for movie: " + responseParam);
 //				}
 //				else if(responseMethodName.equalsIgnoreCase("getAllMoviesBookedByCustomer") && responseParam!=null) {
 //
-////					System.out.print(responseParam + ": ");
 //					responseString = movieDB.getAllMoviesBookedByCustomer(responseParam);//to get all movies booked by Customer
 //
 //					LOGGER.info("Movies booked by customer " + responseParam + " are: " + responseString);
@@ -99,8 +108,7 @@ public class VerdunServer implements ServerInterface {
 //				}
 //				else if(responseMethodName.equalsIgnoreCase("bookMovieTicketForCustomer") && responseParameters!=null) {
 //
-////					System.out.print(responseParam + ": ");
-//					//todo get all parameters after removing , from parameters.
+//					//get all parameters after removing , from parameters.
 //					List<String> param = Arrays.asList(responseParameters.split("\\s*,\\s*"));
 //					responseString = user.bookMovieTicketForCustomer(param.get(0),param.get(1),param.get(2),Integer.parseInt(param.get(3)));//to book movie
 //
@@ -109,10 +117,12 @@ public class VerdunServer implements ServerInterface {
 //				}
 //				else if(responseMethodName.equalsIgnoreCase("cancelMovieTicketForCustomer") && responseParameters!=null) {
 //
+////					System.out.print(responseParam + ": ");
 //					//get all parameters after removing , from parameters.
 //					List<String> param = Arrays.asList(responseParameters.split("\\s*,\\s*"));
 //					responseString = user.cancelMovieTicketsForCustomer(param.get(0),param.get(1),param.get(2),Integer.parseInt(param.get(3)));//to cancel movie
-//
+////					DatagramPacket reply = new DatagramPacket(responseString.getBytes(), responseString.length(), request.getAddress(), request.getPort());
+////					aSocket.send(reply);
 //					LOGGER.info("Movie cancelled for customer " + param.get(0) + "? : " + responseString);
 //					LOGGER.info("Response sent after cancelling movie "+param.get(2)+ "for customer: " + param.get(0));
 //				}
@@ -135,9 +145,9 @@ public class VerdunServer implements ServerInterface {
 //					boolean isCustomerExist = userDB.verifyUserID(responseParam);
 //					responseString = String.valueOf(isCustomerExist);
 //					if(!isCustomerExist){
-//						LOGGER.info("No user found with user id: "+responseParam+" in Verdun");
+//						LOGGER.info("No user found with user id: "+responseParam+" in Atwater");
 //					}else{
-//						LOGGER.info("User "+ responseParam +" found in Verdun");
+//						LOGGER.info("User "+ responseParam +" found in Atwater");
 //					}
 //
 //				}
@@ -157,14 +167,11 @@ public class VerdunServer implements ServerInterface {
 //			}
 //		}catch (SocketException e) {
 //			System.out.println("Socket: " + e.getMessage());
-//			LOGGER.info("Socket: " + e.getMessage());
 //		} catch (IOException e) {
 //			System.out.println("IO: " + e.getMessage());
-//			LOGGER.info("IO: " + e.getMessage());
 //		} finally {
 //			if (aSocket != null)
 //				aSocket.close();
-//			LOGGER.info("Closing socket!");
 //		}
 //	}
 }

@@ -1,4 +1,4 @@
-package Replica2;
+package Replica3;
 
 public class Message {
 	public String FrontEndIpAddress,MethodCalled , MessageType, userID, newMovieId, newMovieName, oldMovieId, oldMovieName;

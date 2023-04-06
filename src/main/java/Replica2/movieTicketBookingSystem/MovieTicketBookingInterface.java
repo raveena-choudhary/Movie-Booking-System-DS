@@ -1,7 +1,8 @@
-package Replica3.movieTicketBookingSystem;
+package Replica2.movieTicketBookingSystem;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.List;
 
 //Remote interface
 public interface MovieTicketBookingInterface extends Remote{

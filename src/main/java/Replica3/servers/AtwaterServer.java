@@ -1,12 +1,11 @@
-package Replica2.servers;
+package Replica3.servers;
 
-import Replica2.movieTicketBookingSystem.user.Admin;
-import Replica2.util.db.LoginDBMovieTicketSystem;
-import Replica2.util.db.MovieTicketBookingDB;
+import Replica3.movieTicketBookingSystem.user.Admin;
+import Replica3.util.db.LoginDBMovieTicketSystem;
+import Replica3.util.db.MovieTicketBookingDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import util.login.UserInfo;
-
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 
@@ -15,7 +14,7 @@ import java.rmi.RemoteException;
 public class AtwaterServer implements ServerInterface {
 
 	private static final Logger LOGGER = LogManager.getLogger("atwater");
-	private static final int portNum = 6000;
+	private static final int portNum = 7000;
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
 	private static final String registryURL = "rmi://localhost:" + portNum + "/atwater";

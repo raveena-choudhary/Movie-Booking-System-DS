@@ -1,10 +1,10 @@
-package Replica3.movieTicketBookingSystem.user;
+package Replica2.movieTicketBookingSystem.user;
 
-import Replica3.util.db.MovieTicketBookingDB;
+import Replica2.util.db.MovieTicketBookingDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import util.OutputToUser;
-import Replica3.util.UDPCommunication;
+import Replica2.util.UDPCommunication;
 
 import java.rmi.RemoteException;
 
@@ -14,9 +14,9 @@ public class Admin extends User {
     private static final Logger VERLOGGER = LogManager.getLogger("verdun");
     private static final Logger OUTLOGGER = LogManager.getLogger("outremont");
 
-//    private final String User.ATWATER_SERVER_PORT = "7000";
-//    private final String User.VERDUN_SERVER_PORT = "7001";
-//    private final String User.OUTREMONT_SERVER_PORT = "7002";
+//    private final String ATWATER_SERVER_PORT = "6000";
+//    private final String VERDUN_SERVER_PORT = "6001";
+//    private final String OUTREMONT_SERVER_PORT = "6002";
 
     public Admin(MovieTicketBookingDB db, String hostname, String port) throws RemoteException {
         super(db, hostname, port);
@@ -92,30 +92,30 @@ public class Admin extends User {
         response = (movieName + ":" + listOfAvailableShows).trim();
         String getAvailableShowsForMovieMethod = "getAvailableShowsForMovie";
         switch (port) {
-            case User.ATWATER_SERVER_PORT: {
+            case ATWATER_SERVER_PORT: {
                 ATWLOGGER.info(String.format("Sending request to get all {} shows from Verdun Server ..."), movieName);
-                String responseFromVerdun = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, User.VERDUN_SERVER_PORT, hostname, movieName).trim();
+                String responseFromVerdun = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, VERDUN_SERVER_PORT, hostname, movieName).trim();
                 ATWLOGGER.info(String.format("Response from verdun : {} "), responseFromVerdun);
 
                 ATWLOGGER.info(String.format("Sending request to get all {} shows from Outremont Server..."), movieName);
-                String responseFromOutremont = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, User.OUTREMONT_SERVER_PORT, hostname, movieName).trim();
+                String responseFromOutremont = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, OUTREMONT_SERVER_PORT, hostname, movieName).trim();
                 ATWLOGGER.info(String.format("Response from outremont : {} "), responseFromOutremont);
                 return concatNonBlankResponses(response, responseFromVerdun, responseFromOutremont);
             }
-            case User.VERDUN_SERVER_PORT: {
+            case VERDUN_SERVER_PORT: {
                 VERLOGGER.info(String.format("Sending request to get all {} shows from Atwater Server..."), movieName);
-                String responseFromAtwater = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, User.ATWATER_SERVER_PORT, hostname, movieName).trim();
+                String responseFromAtwater = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, ATWATER_SERVER_PORT, hostname, movieName).trim();
 
                 VERLOGGER.info(String.format("Sending request to get all {} shows from Outremont Server..."), movieName);
-                String responseFromOutremont = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, User.OUTREMONT_SERVER_PORT, hostname, movieName).trim();
+                String responseFromOutremont = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, OUTREMONT_SERVER_PORT, hostname, movieName).trim();
                 return concatNonBlankResponses(response, responseFromAtwater, responseFromOutremont);
             }
-            case User.OUTREMONT_SERVER_PORT: {
+            case OUTREMONT_SERVER_PORT: {
                 OUTLOGGER.info(String.format("Sending request to get all {} shows from Verdun Server..."), movieName);
-                String responseFromVerdun = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, User.VERDUN_SERVER_PORT, hostname, movieName).trim();
+                String responseFromVerdun = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, VERDUN_SERVER_PORT, hostname, movieName).trim();
 
                 OUTLOGGER.info(String.format("Sending request to get all {} shows from Atwater Server..."), movieName);
-                String responseFromAtwater = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, User.ATWATER_SERVER_PORT, hostname, movieName).trim();
+                String responseFromAtwater = UDPCommunication.sendMessage(getAvailableShowsForMovieMethod, ATWATER_SERVER_PORT, hostname, movieName).trim();
                 return concatNonBlankResponses(response, responseFromVerdun, responseFromAtwater);
             }
         }
