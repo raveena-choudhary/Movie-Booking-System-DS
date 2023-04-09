@@ -5,7 +5,7 @@ import Replica3.util.db.LoginDBMovieTicketSystem;
 import Replica3.util.db.MovieTicketBookingDB;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import util.login.UserInfo;
+import util.login.UserInfo;;
 
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;

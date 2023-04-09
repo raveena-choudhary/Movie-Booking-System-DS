@@ -22,7 +22,8 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
     private final List<RmResponse> responses = new ArrayList<>();
     private ORB orb;
 
-    private static String userName = "";
+    private String userName = "";
+    private String adminUser = "ATWA1234";
 
     public FrontEndImplementation(FEInterface inter) {
         super();
@@ -36,7 +37,7 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
 
     @Override
     public synchronized String addMovieSlots(String movieID, String movieName, int bookingCapacity) {
-        MyRequest myRequest = new MyRequest("addMovieSlots", userName);
+        MyRequest myRequest = new MyRequest("addMovieSlots", adminUser);
         myRequest.setMovieId(movieID);
         myRequest.setMovieName(movieName);
         myRequest.setBookingCapacity(bookingCapacity);
@@ -47,7 +48,7 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
 
     @Override
     public synchronized String removeMovieSlots(String movieID, String movieName) {
-        MyRequest myRequest = new MyRequest("removeMovieSlots", userName);
+        MyRequest myRequest = new MyRequest("removeMovieSlots", adminUser);
         myRequest.setMovieId(movieID);
         myRequest.setMovieName(movieName);
         myRequest.setSequenceNumber(sendUdpUnicastToSequencer(myRequest));
@@ -57,7 +58,7 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
 
     @Override
     public synchronized String listMovieShowsAvailability(String movieName) {
-        MyRequest myRequest = new MyRequest("listMovieShowsAvailability", userName);
+        MyRequest myRequest = new MyRequest("listMovieShowsAvailability", adminUser);
         myRequest.setMovieName(movieName);
         myRequest.setSequenceNumber(sendUdpUnicastToSequencer(myRequest));
         System.out.println("FE Implementation:listMovieShowsAvailability>>>" + myRequest.toString());
@@ -95,7 +96,7 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
     }
 
     @Override
-    public boolean validateUser(String username, String password) {
+    public synchronized boolean validateUser(String username, String password) {
         userName = username;
         return validateBooleanResponses(new MyRequest("validateUser",username));
     }
@@ -106,7 +107,7 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
     }
 
     @Override
-    public String getAllMovieNames() {
+    public synchronized String getAllMovieNames() {
         MyRequest myRequest = new MyRequest("getAllMovieNames",userName);
         myRequest.setSequenceNumber(sendUdpUnicastToSequencer(myRequest));
         System.out.println("FE Implementation:getAllMovieNames>>>" + myRequest);
@@ -114,7 +115,7 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
     }
 
     @Override
-    public String getAllMovieIds(String movieName) {
+    public synchronized String getAllMovieIds(String movieName) {
         MyRequest myRequest = new MyRequest("getAllMovieIds",userName);
         myRequest.setMovieName(movieName);
         System.out.println("selected movieName sent from FE" + movieName);
@@ -215,12 +216,12 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
             Rm1NoResponseCount = 0;
             if (res1.equals(res2)) {
                 if (!res1.equals(res3) && res3 != null) {
-                    rmBugFound(3);
+                   // rmBugFound(3);
                 }
                 return res2.getResponse();
             } else if (res1.equals(res3)) {
                 if (!res1.equals(res2) && res2 != null) {
-                    rmBugFound(2);
+                    //rmBugFound(2);
                 }
                 return res1.getResponse();
             } else {
@@ -240,12 +241,12 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
             Rm2NoResponseCount = 0;
             if (res2.equals(res3)) {
                 if (!res2.equals(res1) && res1 != null) {
-                    rmBugFound(1);
+                   // rmBugFound(1);
                 }
                 return res2.getResponse();
             } else if (res2.equals(res1)) {
                 if (!res2.equals(res3) && res3 != null) {
-                    rmBugFound(3);
+                   // rmBugFound(3);
                 }
                 return res2.getResponse();
             } else {
@@ -265,12 +266,12 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
             Rm3NoResponseCount = 0;
             if (res3.equals(res2)) {
                 if (!res3.equals(res1) && res1 != null) {
-                    rmBugFound(1);
+                    //rmBugFound(1);
                 }
                 return res2.getResponse();
             } else if (res3.equals(res1) && res2 != null) {
                 if (!res3.equals(res2)) {
-                    rmBugFound(2);
+                   // rmBugFound(2);
                 }
                 return res3.getResponse();
             } else {
@@ -287,66 +288,83 @@ public class FrontEndImplementation extends MovieTicketBooking.MovieTicketBookin
         return "Fail: majority response not found";
     }
 
-    private void rmBugFound(int rmNumber) {
-        switch (rmNumber) {
-            case 1:
-                Rm1BugCount++;
-                if (Rm1BugCount == 3) {
-                    Rm1BugCount = 0;
-                    inter.informRmHasBug(rmNumber);
-                }
-                break;
-            case 2:
-                Rm2BugCount++;
-                if (Rm2BugCount == 3) {
-                    Rm2BugCount = 0;
-                    inter.informRmHasBug(rmNumber);
-                }
-                break;
+//    private void rmBugFound(int rmNumber) {
+//        switch (rmNumber) {
+//            case 1:
+//                Rm1BugCount++;
+//                if (Rm1BugCount == 3) {
+//                    Rm1BugCount = 0;
+//                    inter.informRmHasBug(rmNumber);
+//                }
+//                break;
+//            case 2:
+//                Rm2BugCount++;
+//                if (Rm2BugCount == 3) {
+//                    Rm2BugCount = 0;
+//                    inter.informRmHasBug(rmNumber);
+//                }
+//                break;
+//
+//            case 3:
+//                Rm3BugCount++;
+//                if (Rm3BugCount == 3) {
+//                    Rm3BugCount = 0;
+//                    inter.informRmHasBug(rmNumber);
+//                }
+//                break;
+//        }
+//        System.out.println("FE Implementation:rmBugFound>>>RM1 - bugs:" + Rm1BugCount);
+//        System.out.println("FE Implementation:rmBugFound>>>RM2 - bugs:" + Rm2BugCount);
+//        System.out.println("FE Implementation:rmBugFound>>>RM3 - bugs:" + Rm3BugCount);
+//    }
 
-            case 3:
-                Rm3BugCount++;
-                if (Rm3BugCount == 3) {
-                    Rm3BugCount = 0;
-                    inter.informRmHasBug(rmNumber);
-                }
-                break;
-        }
-        System.out.println("FE Implementation:rmBugFound>>>RM1 - bugs:" + Rm1BugCount);
-        System.out.println("FE Implementation:rmBugFound>>>RM2 - bugs:" + Rm2BugCount);
-        System.out.println("FE Implementation:rmBugFound>>>RM3 - bugs:" + Rm3BugCount);
-    }
-
+    //crash failure
     private void rmDown(int rmNumber) {
         DYNAMIC_TIMEOUT = 10000;
         switch (rmNumber) {
             case 1:
-                Rm1NoResponseCount++;
-                if (Rm1NoResponseCount == 3) {
-                    Rm1NoResponseCount = 0;
-                    inter.informRmIsDown(rmNumber);
-                }
+                inter.informRmIsDown(rmNumber);
                 break;
             case 2:
-                Rm2NoResponseCount++;
-                if (Rm2NoResponseCount == 3) {
-                    Rm2NoResponseCount = 0;
-                    inter.informRmIsDown(rmNumber);
-                }
+                inter.informRmIsDown(rmNumber);
                 break;
 
             case 3:
-                Rm3NoResponseCount++;
-                if (Rm3NoResponseCount == 3) {
-                    Rm3NoResponseCount = 0;
-                    inter.informRmIsDown(rmNumber);
-                }
+                inter.informRmIsDown(rmNumber);
                 break;
         }
-        System.out.println("FE Implementation:rmDown>>>RM1 - noResponse:" + Rm1NoResponseCount);
-        System.out.println("FE Implementation:rmDown>>>RM2 - noResponse:" + Rm2NoResponseCount);
-        System.out.println("FE Implementation:rmDown>>>RM3 - noResponse:" + Rm3NoResponseCount);
     }
+
+//    private void rmDown(int rmNumber) {
+//        DYNAMIC_TIMEOUT = 10000;
+//        switch (rmNumber) {
+//            case 1:
+//                Rm1NoResponseCount++;
+//                if (Rm1NoResponseCount == 3) {
+//                    Rm1NoResponseCount = 0;
+//                    inter.informRmIsDown(rmNumber);
+//                }
+//                break;
+//            case 2:
+//                Rm2NoResponseCount++;
+//                if (Rm2NoResponseCount == 3) {
+//                    Rm2NoResponseCount = 0;
+//                    inter.informRmIsDown(rmNumber);
+//                }
+//                break;
+//
+//            case 3:
+//                Rm3NoResponseCount++;
+//                if (Rm3NoResponseCount == 3) {
+//                    Rm3NoResponseCount = 0;
+//                    inter.informRmIsDown(rmNumber);
+//                }
+//                break;
+//        }
+//        System.out.println("FE Implementation:rmDown>>>RM1 - noResponse:" + Rm1NoResponseCount);
+//        System.out.println("FE Implementation:rmDown>>>RM2 - noResponse:" + Rm2NoResponseCount);
+//        System.out.println("FE Implementation:rmDown>>>RM3 - noResponse:" + Rm3NoResponseCount);
+//    }
 
     private void setDynamicTimout() {
         if (responseTime < 4000) {

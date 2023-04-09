@@ -181,10 +181,10 @@ public class FE {
 //            }
 //            aSocket.joinGroup(InetAddress.getByName("230.1.1.5"));
             aSocket = new DatagramSocket(FE_PORT, desiredAddress);
-            byte[] buffer = new byte[1000];
             System.out.println("FE Server Started on " + desiredAddress + ":" + FE_PORT + "............");
 
             while (true) {
+                byte[] buffer = new byte[1000];
                 DatagramPacket response = new DatagramPacket(buffer, buffer.length);
                 aSocket.receive(response);
                 String sentence = new String(response.getData(), 0,

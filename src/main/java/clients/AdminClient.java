@@ -36,7 +36,7 @@ public class AdminClient {
 
 //    private static UserImplementation admin;
 
-    public static MovieTicketBooking.MovieTicketBookingInterface admin = null;
+    private static MovieTicketBooking.MovieTicketBookingInterface admin = null;
 
     public static void main(String[] args) throws MalformedURLException, NotBoundException, RemoteException {
 

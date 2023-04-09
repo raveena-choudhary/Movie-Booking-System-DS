@@ -1,13 +1,11 @@
 package Replica3;
 import Replica3.movieTicketBookingSystem.MovieTicketBookingInterface;
-import Replica3.servers.AtwaterServer;
-import Replica3.servers.OutremontServer;
-import Replica3.servers.VerdunServer;
 import util.Enums.ServerEnum;
-//import servers.ServerEnum;
+import util.RMServersDownException;
 
 import java.io.IOException;
 import java.net.*;
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Iterator;
@@ -18,9 +16,9 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class RM3 {
 
-    private static final String ATWATER_SERVER_PORT = "7000";
-    private static final String VERDUN_SERVER_PORT = "7001";
-    private static final String OUTREMONT_SERVER_PORT = "7002";
+    protected static final int ATWATER_SERVER_PORT = 7000;
+    protected static final int VERDUN_SERVER_PORT = 7001;
+    protected static final int OUTREMONT_SERVER_PORT = 7002;
 
     private static final String HOSTNAME= "localhost";
     private static int PORT=0;
@@ -29,20 +27,24 @@ public class RM3 {
     public static MovieTicketBookingInterface customer = null;
 
     public static int lastSequenceID = 1;
-    public static ConcurrentHashMap<Integer, Message> message_list = new ConcurrentHashMap<>();
-    public static Queue<Message> message_q = new ConcurrentLinkedQueue<Message>();
+
+    private static final int multicast_socket_port = 1234;
+    private static final String multicast_Addr = "230.1.1.10";
+
+    private static final int FE_port = 1999;
+    private static final int port_to_reply_Fe = 2023;
+    //Map to store sequence id and message to respond front end with sequence id, response--> Format<Sequence Id, Request>
+    public static ConcurrentHashMap<Integer, Message> message_with_sequenceId_map = new ConcurrentHashMap<>();
+
+    //Message queue to get the messages from Sequencer, stores
+    public static Queue<Message> message_queue = new ConcurrentLinkedQueue<Message>();
     private static boolean serversFlag = true;
 
     public static void main(String[] args) throws Exception {
-        Run();
-    }
-
-    private static void Run() throws Exception {
         Runnable task = () -> {
             try {
                 receive();
             } catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         };
@@ -54,18 +56,21 @@ public class RM3 {
         MulticastSocket socket = null;
         try {
 
-            socket = new MulticastSocket(1234);
+            socket = new MulticastSocket(multicast_socket_port);
 
-            socket.joinGroup(InetAddress.getByName("230.1.1.10"));
+            socket.joinGroup(InetAddress.getByName(multicast_Addr));
 
             byte[] buffer = new byte[1000];
-            System.out.println("RM3 UDP Server Started(port=1234)............");
+            System.out.println("RM3 Started.");
 
             //Run thread for executing all messages in queue
             Runnable task = () -> {
                 try {
-                    executeAllRequests();
-                } catch (Exception e) {
+                    executeAllMessagesInQueue();
+                } catch (RMServersDownException e) {
+                    message_with_sequenceId_map.remove(e.getSequenceId());
+                    e.printStackTrace();
+                }catch (Exception e) {
                     e.printStackTrace();
                 }
             };
@@ -76,103 +81,56 @@ public class RM3 {
                 DatagramPacket request = new DatagramPacket(buffer, buffer.length);
                 socket.receive(request);
 
-                String data = new String(request.getData(), 0, request.getLength());
-                String[] parts = data.split(";");
+                String msgData = new String(request.getData(), 0, request.getLength());
+                String[] parts = msgData.split(";");
 
-                /*
+                 /*
                 Message Types:
                     00- Simple message
                     01- Sync request between the RMs
-                    02- Initialing RM
-                    11-Rm1 has bug
-                    12-RM2 has bug
-                    13-Rm3 has bug
-                    21-Rm1 is down
-                    22-RM2 is down
-                    23-Rm3 is down
+                    03 - send message to RM1 on request
+                    21-Rm1 is down, crashed
                 */
-                System.out.println("RM1 recieved message. Detail:" + data);
-                if (parts[2].equalsIgnoreCase("00")) {
-                    Message message = message_obj_create(data);
-                    Message message_To_RMs = message_obj_create(data);
-                    message_To_RMs.MessageType = "01";
-                    send_multicast_toRM(message_To_RMs);
-                    if (message.sequenceId - lastSequenceID > 1) {
-                        Message initial_message = new Message(0, "Null", "02", Integer.toString(lastSequenceID), Integer.toString(message.sequenceId), "RM1", "Null", "Null", "Null", 0,0);
-                        System.out.println("RM1 send request to update its message list. from:" + lastSequenceID + "To:" + message.sequenceId);
-                        // Request all RMs to send back list of messages
-                        send_multicast_toRM(initial_message);
-                    }
-                    System.out.println("is adding queue:" + message);
-                    message_q.add(message);
-                    message_list.put(message.sequenceId, message);
-                } else if (parts[2].equalsIgnoreCase("01")) {
-                    Message message = message_obj_create(data);
-                    if (!message_list.contains(message.sequenceId))
-                        message_list.put(message.sequenceId, message);
-                } else if (parts[2].equalsIgnoreCase("02")) {
-                    initial_send_list(Integer.parseInt(parts[3]), Integer.parseInt(parts[4]), parts[5]);
-                } else if (parts[2].equalsIgnoreCase("03") && parts[5].equalsIgnoreCase("RM1")) {
-                    update_message_list(parts[1]);
-                } else if (parts[2].equalsIgnoreCase("11")) {
-                    Message message = message_obj_create(data);
-                    System.out.println("RM1 has bug:" + message.toString());
-                } else if (parts[2].equalsIgnoreCase("12")) {
-                    Message message = message_obj_create(data);
-                    System.out.println("RM2 has bug:" + message.toString());
-                } else if (parts[2].equalsIgnoreCase("13")) {
-                    Message message = message_obj_create(data);
-                    System.out.println("RM3 has bug:" + message.toString());
-                } else if (parts[2].equalsIgnoreCase("22")) {
-                    Runnable crash_task = () -> {
-                        try {
-                            //suspend the execution of messages untill all servers are up. (serversFlag=false)
-                            serversFlag = false;
-                            String registryURL="";
-                            //reboot Atwater Server
-                            Registry atwater_registry = LocateRegistry.getRegistry(ATWATER_SERVER_PORT);
-                            registryURL = "rmi://" + HOSTNAME+ ":" + ATWATER_SERVER_PORT + "/atwater";
-                            admin = (MovieTicketBookingInterface) atwater_registry.lookup(registryURL+"/admin");
-                            customer = (MovieTicketBookingInterface) atwater_registry.lookup(registryURL+"/customer");
-                            admin.shutDown();
-                            System.out.println("RM3 shutdown Atwater Server");
-
-                            //reboot Verdun Server
-                            Registry verdun_registry = LocateRegistry.getRegistry(VERDUN_SERVER_PORT);
-                            registryURL = "rmi://" + HOSTNAME+ ":" + ATWATER_SERVER_PORT + "/verdun";
-                            admin = (MovieTicketBookingInterface) verdun_registry.lookup(registryURL+"/admin");
-                            customer = (MovieTicketBookingInterface) verdun_registry.lookup(registryURL+"/customer");
-                            admin.shutDown();
-                            System.out.println("RM3 shutdown Verdun Server");
-
-                            //reboot Outremont Server
-                            Registry outremont_registry = LocateRegistry.getRegistry(OUTREMONT_SERVER_PORT);
-                            registryURL = "rmi://" + HOSTNAME+ ":" + ATWATER_SERVER_PORT + "/outremont";
-                            admin = (MovieTicketBookingInterface) outremont_registry.lookup(registryURL+"/admin");
-                            customer = (MovieTicketBookingInterface) outremont_registry.lookup(registryURL+"/customer");
-                            admin.shutDown();
-                            System.out.println("RM3 shutdown Outremont Server");
-
-                            //This is going to start all the servers for this implementation
-                            AtwaterServer.main(new String[0]);
-                            Thread.sleep(500);
-                            VerdunServer.main(new String[0]);
-                            Thread.sleep(500);
-                            OutremontServer.main(new String[0]);
-
-                            //wait untill are servers are up
-                            Thread.sleep(5000);
-
-                            System.out.println("RM3 is reloading servers hashmap");
-                            reloadServers();
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                System.out.println("RM3 recieved message with msgData:" + msgData);
+                String messageTypeFromRequest = parts[2];
+                switch(messageTypeFromRequest)
+                {
+                    case "00": {
+                        Message message = createMessage(msgData); //create message object
+                        //check when sequence id is not matching with seq id expected by RM
+                        //requesting all RMs to send list of messages
+                        if (message.sequenceId - lastSequenceID > 1) {
+                            Message initial_message = new Message(0, "Null", "02", Integer.toString(lastSequenceID), Integer.toString(message.sequenceId), "Null", "Null", "Null", "Null", 0,0);
+                            System.out.println("Sending request to all RMs for message list..");
+                            sendMulticastToRM(initial_message);
                         }
-                    };
-                    Thread handleThread = new Thread(crash_task);
-                    handleThread.start();
-                    System.out.println("RM3 handled the crash!");
-                    serversFlag = true;
+                        System.out.println("message to be added in queue:" + message);
+                        System.out.println("message to be added in map: " + message+ "with sequence id:" + message.sequenceId);
+                        message_queue.add(message);
+                        message_with_sequenceId_map.put(message.sequenceId, message);
+                        break;
+                    }
+                    case "01":
+                    {
+                        Message message = createMessage(msgData);
+                        if (!message_with_sequenceId_map.contains(message.sequenceId))
+                            message_with_sequenceId_map.put(message.sequenceId, message);
+                        break;
+                    }
+                    case "02": {
+                        initial_send_list(Integer.parseInt(parts[3]), Integer.parseInt(parts[4]), parts[5]);
+                        break;
+                    }
+                    case "03":
+                    {
+                        updateMessageList(parts[1]);
+                        break;
+                    }
+                    case "21": {
+                        System.out.println("RM1 is down.... send list of messages");
+                        initial_send_list(1,lastSequenceID,"RM1");
+                        break;
+                    }
                 }
             }
 
@@ -186,62 +144,62 @@ public class RM3 {
         }
     }
 
-    private static Message message_obj_create(String data) {
+    private static Message createMessage(String data) {
         String[] parts = data.split(";");
         int sequenceId = Integer.parseInt(parts[0]);
-        String FrontIpAddress = parts[1];
+        String FrontEndIpAddress = parts[1];
         String MessageType = parts[2];
-        String Function = parts[3];
+        String MethodCalled = parts[3];
         String userID = parts[4];
-        String newEventID = parts[5];
-        String newEventType = parts[6];
-        String oldEventID = parts[7];
-        String oldEventType = parts[8];
+        String newMovieId = parts[5];
+        String newMovieName = parts[6];
+        String oldMovieId = parts[7];
+        String oldMovieName = parts[8];
         int bookingCapacity = Integer.parseInt(parts[9]);
         int numberOfTickets = Integer.parseInt(parts[10]);
-        Message message = new Message(sequenceId, FrontIpAddress, MessageType, Function, userID, newEventID, newEventType, oldEventID, oldEventType, bookingCapacity,numberOfTickets);
+        Message message = new Message(sequenceId, FrontEndIpAddress, MessageType, MethodCalled, userID, newMovieId, newMovieName, oldMovieId, oldMovieName, bookingCapacity, numberOfTickets);
         return message;
     }
 
     // Create a list of messsages, seperating them with @ and send it back to RM
     private static void initial_send_list(Integer begin, Integer end, String RmNumber) {
         String list = "";
-        for (ConcurrentHashMap.Entry<Integer, Message> entry : message_list.entrySet()) {
-            if (entry.getValue().sequenceId > begin && entry.getValue().sequenceId < end) {
+        for (ConcurrentHashMap.Entry<Integer, Message> entry : message_with_sequenceId_map.entrySet()) {
+            System.out.println(entry.getKey());
+            if (entry.getValue().sequenceId >= begin && entry.getValue().sequenceId <= end) {
                 list += entry.getValue().toString() + "@";
             }
         }
-        // Remove the last @ character
-        if (list.length() > 2)
-            list.substring(list.length() - 1);
-        Message message = new Message(0, list, "03", begin.toString(), end.toString(), RmNumber, "Null", "Null", "Null", 0,0);
+
+        if(list.contains("@"))
+        {
+            list=list.substring(0,list.length() - 1);
+        }
+        Message message = new Message(0, "{"+list+"}", "03", begin.toString(), end.toString(), "Null", "Null", "Null", "Null", 0,0);
         System.out.println("RM3 sending its list of messages for initialization. list of messages:" + list);
-        send_multicast_toRM(message);
+        sendMulticastToRM(message);
     }
 
-    //update the hasmap and and new data to queue to be execited
-    private static void update_message_list(String data) {
+
+    private static void updateMessageList(String data) {
         String[] parts = data.split("@");
         for (int i = 0; i < parts.length; ++i) {
-            Message message = message_obj_create(parts[i]);
-            //we get the list from 2 other RMs and will ensure that there will be no duplication
-            if (!message_list.containsKey(message.sequenceId)) {
+            Message message = createMessage(parts[i]);
+            if (!message_with_sequenceId_map.containsKey(message.sequenceId)) {
                 System.out.println("RM3 update its message list" + message);
-                message_q.add(message);
-                message_list.put(message.sequenceId, message);
+                message_queue.add(message);
+                message_with_sequenceId_map.put(message.sequenceId, message);
             }
         }
     }
 
-    private static void send_multicast_toRM(Message message) {
+    private static void sendMulticastToRM(Message message) {
         int port = 1234;
         DatagramSocket socket = null;
         try {
             socket = new DatagramSocket();
             byte[] data = message.toString().getBytes();
-            InetAddress aHost = InetAddress.getByName("230.1.1.10");
-//            InetAddress aHost = InetAddress.getByName("localhost");
-
+            InetAddress aHost = InetAddress.getByName(multicast_Addr);
             DatagramPacket request = new DatagramPacket(data, data.length, aHost, port);
             socket.send(request);
             System.out.println("Message multicasted from RM3 to other RMs. Detail:" + message);
@@ -251,29 +209,31 @@ public class RM3 {
     }
 
     //Execute all request from the lastSequenceID, send the response back to Front and update the counter(lastSequenceID)
-    private static void executeAllRequests() throws Exception {
-        System.out.println("before while true");
+    private static void executeAllMessagesInQueue() throws Exception, RMServersDownException {
         while (true) {
             synchronized (RM3.class) {
-                Iterator<Message> itr = message_q.iterator();
+                Iterator<Message> itr = message_queue.iterator();
                 while (itr.hasNext()) {
                     Message data = itr.next();
                     System.out.println("RM3 is executing message request. Detail:" + data);
-                    //when the servers are down serversFlag is False therefore, no execution untill all servers are up.
                     if (data.sequenceId == lastSequenceID && serversFlag) {
                         System.out.println("RM1 is executing message request. Detail:" + data);
-                        String response = requestToServers(data);
+                        String response;
+                        try {
+                            response = requestToServers(data);
+                        }
+                        catch (RemoteException re){
+                            throw new RMServersDownException(re, data.sequenceId);
+                        }
                         Message message = new Message(data.sequenceId, response, "RM3",
                                 data.MethodCalled, data.userID, data.newMovieId,
                                 data.newMovieName, data.oldMovieId,
                                 data.oldMovieName, data.bookingCapacity,data.numberOfTickets);
                         lastSequenceID += 1;
                         messsageToFront(message.toString(), data.FrontEndIpAddress);
-                        message_q.poll();
-                        //break;
+                        message_queue.poll();
                     }
                 }
-//                message_q.clear();
             }
         }
     }
@@ -285,21 +245,21 @@ public class RM3 {
         String registryURL = "";
         switch(PORT)
         {
-            case 7000:
+            case ATWATER_SERVER_PORT:
             {
                 registry = LocateRegistry.getRegistry(PORT);
                 System.out.println("Registry: " + registry.toString());
                 registryURL = "rmi://" + HOSTNAME+ ":" + PORT + "/atwater";
                 break;
             }
-            case 7001:
+            case VERDUN_SERVER_PORT:
             {
                 registry = LocateRegistry.getRegistry(PORT);
                 System.out.println("Registry: " + registry.toString());
                 registryURL = "rmi://" + HOSTNAME+ ":" + PORT + "/verdun";
                 break;
             }
-            case 7002:
+            case OUTREMONT_SERVER_PORT:
             {
                 registry = LocateRegistry.getRegistry(PORT);
                 System.out.println("Registry: " + registry.toString());
@@ -375,13 +335,13 @@ public class RM3 {
         String tLocation = ServerEnum.getEnumNameForValue(userName.substring(0,3)).toLowerCase();
         switch(tLocation) {
             case "atwater":
-                PORT = Integer.parseInt(ATWATER_SERVER_PORT);
+                PORT = ATWATER_SERVER_PORT;
                 break;
             case "verdun":
-                PORT = Integer.parseInt(VERDUN_SERVER_PORT);
+                PORT = VERDUN_SERVER_PORT;
                 break;
             case "outremont":
-                PORT = Integer.parseInt(OUTREMONT_SERVER_PORT);
+                PORT = OUTREMONT_SERVER_PORT;
                 break;
         }
     }
@@ -390,12 +350,12 @@ public class RM3 {
         System.out.println("Message to front:" + message);
         DatagramSocket socket = null;
         try {
-            socket = new DatagramSocket(2023);
+            socket = new DatagramSocket(port_to_reply_Fe);
             byte[] bytes = message.getBytes();
             InetAddress aHost = InetAddress.getByName(FrontIpAddress);
 
             System.out.println(aHost);
-            DatagramPacket request = new DatagramPacket(bytes, bytes.length, aHost, 1999);
+            DatagramPacket request = new DatagramPacket(bytes, bytes.length, aHost, FE_port);
             socket.send(request);
         } catch (IOException e) {
             e.printStackTrace();
@@ -405,12 +365,5 @@ public class RM3 {
             }
         }
 
-    }
-
-    public static void reloadServers() throws Exception {
-        for (ConcurrentHashMap.Entry<Integer, Message> entry : message_list.entrySet()) {
-            if (entry.getValue().sequenceId < lastSequenceID)
-                requestToServers(entry.getValue());
-        }
     }
 }

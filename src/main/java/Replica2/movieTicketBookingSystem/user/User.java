@@ -499,7 +499,7 @@ public abstract class User extends UnicastRemoteObject implements MovieTicketBoo
     }
 
     @Override
-    public boolean validateUser(String username, String password) throws RemoteException {
+    public synchronized boolean validateUser(String username, String password) throws RemoteException {
         return loginDb.verifyUser(username, password);
     }
 

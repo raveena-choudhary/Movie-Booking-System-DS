@@ -1419,3 +1419,412 @@
 2023-04-06 16:32:24 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
 2023-04-06 16:32:43 INFO  admin -[main] - request to bookMovieTickets for customer: Movie booked successfully!
 2023-04-06 16:32:47 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 3
+2023-04-06 20:00:27 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 20:00:27 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 20:00:47 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-06 20:03:06 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:06:48 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:08:44 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:10:53 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 20:10:53 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 20:11:03 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:12:33 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:18:30 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 20:18:30 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 20:18:53 INFO  admin -[main] - request to addMovieSlots: Fail: majority response not found
+2023-04-06 20:19:47 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:24:36 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:32:39 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 20:32:39 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 20:33:02 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-06 20:37:23 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:49:19 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:51:45 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:53:20 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:55:10 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:56:19 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 20:58:24 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:00:33 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:13:37 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:16:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:17:36 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:20:43 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:22:51 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:23:25 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:24:11 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:26:52 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:27:12 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:27:40 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:28:41 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:29:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:38:18 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 21:38:18 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 21:38:51 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-06 21:40:09 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:54:41 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:56:41 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 21:59:52 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:03:24 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:03:49 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:05:27 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:06:50 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:07:14 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:08:12 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 22:08:12 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 22:08:25 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:08:56 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:13:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:15:58 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:16:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:19:59 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:21:39 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:28:04 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:29:59 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:32:50 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:38:55 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:42:58 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-06 22:44:04 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:44:48 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 22:44:48 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 22:45:01 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:45:37 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 22:46:10 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:27:09 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-06 23:28:45 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:30:58 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:31:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:42:20 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:44:32 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:45:18 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:48:05 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 23:48:05 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 23:48:20 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-06 23:55:39 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-06 23:56:21 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-06 23:57:49 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-06 23:57:49 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-06 23:58:02 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:00:06 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 00:01:11 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:03:12 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:07:26 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:10:23 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 00:11:27 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:12:55 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:18:55 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:22:14 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:22:54 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:25:50 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:32:29 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 00:34:18 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:36:20 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 00:36:20 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 00:36:37 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM060423 5
+2023-04-07 00:39:06 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 00:41:19 INFO  admin -[main] - request for listMovieShowsAvailability(): No data found
+2023-04-07 00:43:36 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 00:45:24 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 00:45:49 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 00:48:39 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 00:49:25 INFO  admin -[main] - request to bookMovieTickets for customer: Movie is not available in Theater
+2023-04-07 00:50:08 INFO  admin -[main] - request to bookMovieTickets for customer: Movie is not available in Theater
+2023-04-07 00:51:52 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 00:56:26 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 00:56:26 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 00:56:42 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 00:57:13 INFO  admin -[main] - request to removeMovieSlots: Movie slot deleted successfully!
+2023-04-07 00:57:59 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 00:58:04 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 00:58:33 INFO  admin -[main] - request to bookMovieTickets for customer: Movie booked successfully!
+2023-04-07 00:58:49 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 3
+2023-04-07 14:22:06 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 14:22:06 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 14:22:37 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-07 14:25:40 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 14:27:49 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 14:31:30 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 14:31:30 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 14:31:52 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-07 14:35:28 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-07 14:42:01 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 14:42:01 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 14:42:26 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 14:43:06 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 14:44:25 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 14:44:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 14:48:54 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 14:51:49 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 14:55:01 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 18:02:59 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:02:59 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:03:29 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-07 18:07:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:10:37 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 18:14:43 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:14:43 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:15:48 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 18:19:48 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-07 18:22:18 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:22:18 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:22:41 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 18:24:17 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:27:19 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:27:19 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:27:32 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: majority response not found
+2023-04-07 18:30:17 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:30:17 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:30:34 INFO  admin -[main] - request to addMovieSlots: Fail: majority response not found
+2023-04-07 18:33:00 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:33:00 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:33:12 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:36:30 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:37:32 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:38:03 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:38:56 INFO  admin -[main] - request for listMovieShowsAvailability(): No data found
+2023-04-07 18:42:19 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:42:48 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:46:59 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:49:21 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 18:58:22 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 18:58:22 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 18:58:41 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-07 18:59:24 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 19:02:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 5
+2023-04-07 19:05:07 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-07 19:06:58 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-07 19:08:26 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-07 19:13:31 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-07 19:13:31 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-07 19:13:53 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM070423 3
+2023-04-07 19:15:59 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-07 19:16:40 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-08 08:20:39 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 08:20:39 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 08:20:52 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 08:21:26 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-08 08:24:06 INFO  admin -[main] - ATWA12234connection to server open...
+2023-04-08 08:24:06 INFO  admin -[main] - ATWA12234Login Success...
+2023-04-08 08:24:13 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 08:24:37 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-08 08:31:06 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 08:31:06 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 08:31:30 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-08 08:34:16 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 08:34:16 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 08:34:45 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-08 08:37:57 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 08:37:57 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 08:38:15 INFO  admin -[main] - request for listMovieShowsAvailability(): Null response from serverVER
+2023-04-08 08:41:05 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 08:41:05 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 08:41:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 08:41:47 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 08:44:53 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 08:58:45 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:16:29 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 09:16:29 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 09:16:43 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 09:16:47 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:17:19 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:17:52 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:20:43 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:23:24 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:23:51 INFO  admin -[main] - request to bookMovieTickets for customer: Fail: No response from any server
+2023-04-08 09:25:39 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 09:25:39 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 09:26:35 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-08 09:28:03 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-08 09:29:14 INFO  admin -[main] - ATWA1235connection to server open...
+2023-04-08 09:29:15 INFO  admin -[main] - ATWA1235Login Success...
+2023-04-08 09:29:24 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 09:30:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:30:51 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:31:23 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:34:22 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 3
+2023-04-08 09:35:46 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-08 09:42:34 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 09:42:34 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 09:42:44 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 09:42:54 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:43:31 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:48:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:53:06 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:53:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 09:55:13 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 09:55:13 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 09:55:26 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 10:02:08 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 10:02:08 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 10:02:22 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 10:02:22 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 10:02:35 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 10:04:00 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-08 10:04:55 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 10:04:55 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 10:05:16 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-08 10:17:57 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 10:17:57 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 10:18:10 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 11:01:11 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 11:05:37 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 11:11:51 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 11:45:10 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:12:30 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 13:12:30 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 13:12:42 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 13:13:41 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:14:35 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:23:49 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:24:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:25:08 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 13:25:08 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 13:25:28 INFO  admin -[main] - request to addMovieSlots: Movie cannot be added as it is from past date.
+2023-04-08 13:27:19 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 13:27:19 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 13:27:38 INFO  admin -[main] - request to addMovieSlots: Movie cannot be added as it is from past date.
+2023-04-08 13:29:48 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:32:31 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:38:21 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:41:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:42:58 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:44:33 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:50:27 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 13:50:27 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 13:50:35 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-08 13:50:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:51:50 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 13:55:09 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 14:49:28 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 14:49:28 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 14:49:42 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 14:50:59 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 14:54:22 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 14:54:22 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 14:54:35 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 14:55:21 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 14:56:00 INFO  admin -[main] - request to addMovieSlots: Movie slot already exists!
+2023-04-08 14:56:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 22:41:01 INFO  admin -[main] - ATWA1234Issue connecting with Server...
+2023-04-08 22:42:00 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 22:42:00 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 22:42:11 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 22:42:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 22:43:01 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 22:44:29 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:13:31 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:14:02 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:15:22 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:16:58 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:20:05 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:32:38 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-08 23:32:38 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-08 23:32:45 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-08 23:33:06 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:33:32 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-08 23:34:09 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-09 00:17:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM080423 5
+2023-04-09 01:03:34 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 01:03:34 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 01:03:49 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 01:03:55 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:04:52 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:24:53 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:29:59 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:31:39 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:32:24 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 01:32:24 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 01:32:37 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:41:25 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:42:20 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:47:15 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:49:36 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:51:16 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 01:59:57 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:01:14 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 02:01:14 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 02:01:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:06:49 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:08:23 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 02:08:23 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 02:08:47 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:11:34 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:13:14 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:16:09 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:17:19 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:22:56 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:23:56 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:26:19 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:27:23 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:33:02 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:37:04 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:39:53 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:41:37 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:44:31 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:51:55 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 02:55:08 INFO  admin -[main] - request to bookMovieTickets for customer: Fail: majority response not found
+2023-04-09 02:55:53 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 02:57:31 INFO  admin -[main] - request to bookMovieTickets for customer: Movie already booked for same slot or with same name
+2023-04-09 02:58:18 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 02:59:11 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 03:00:38 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 03:02:04 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 03:04:27 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 03:04:27 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 03:04:53 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 03:05:22 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 03:08:34 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: majority response not found
+2023-04-09 03:09:11 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 03:15:48 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 03:17:02 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: majority response not found
+2023-04-09 03:19:07 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 03:19:49 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 03:19:49 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 03:20:01 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: majority response not found
+2023-04-09 03:25:11 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: majority response not found
+2023-04-09 03:26:28 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 03:27:24 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 13:26:30 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 13:26:30 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 13:27:01 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-09 13:29:21 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-09 13:30:52 INFO  admin -[main] - request to addMovieSlots: Fail: No response from any server
+2023-04-09 13:31:46 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 13:32:38 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 13:33:20 INFO  admin -[main] - request to bookMovieTickets for customer: Movie booked successfully!
+2023-04-09 13:36:41 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 13:36:41 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 13:36:50 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 13:37:06 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 13:37:22 INFO  admin -[main] - request to bookMovieTickets for customer: Movie booked successfully!
+2023-04-09 13:37:28 INFO  admin -[main] - request to getBookingSchedule for customer: pink:ATWATER MORNING 090423 2
+2023-04-09 13:38:30 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:46:52 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:47:22 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 13:47:22 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 13:47:36 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:48:14 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:48:55 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 13:48:55 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 13:49:10 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:53:23 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:54:48 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 13:55:29 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 14:00:40 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 14:04:05 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 14:08:43 INFO  admin -[main] - request for listMovieShowsAvailability(): Fail: No response from any server
+2023-04-09 14:09:41 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 14:09:59 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 14:10:51 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 14:11:19 INFO  admin -[main] - request to bookMovieTickets for customer: Movie already booked for same slot or with same name
+2023-04-09 14:11:52 INFO  admin -[main] - request to getBookingSchedule for customer: pink:ATWATER MORNING 090423 2
+2023-04-09 14:12:05 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 14:14:45 INFO  admin -[main] - ATWA1234connection to server open...
+2023-04-09 14:14:45 INFO  admin -[main] - ATWA1234Login Success...
+2023-04-09 14:14:53 INFO  admin -[main] - request to addMovieSlots: Movie slot added successfully!
+2023-04-09 14:14:57 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 14:15:09 INFO  admin -[main] - request to bookMovieTickets for customer: Movie booked successfully!
+2023-04-09 14:15:12 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 14:15:41 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 14:15:54 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3
+2023-04-09 14:17:35 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 5
+2023-04-09 14:21:11 INFO  admin -[main] - request for listMovieShowsAvailability(): pink:ATWM090423 3

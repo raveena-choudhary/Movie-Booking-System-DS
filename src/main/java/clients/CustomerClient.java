@@ -30,7 +30,7 @@ public class CustomerClient {
 //    private static final String VERDUN_SERVER_PORT = "5001";
 //    private static final String OUTREMONT_SERVER_PORT = "5002";
 
-    public static MovieTicketBooking.MovieTicketBookingInterface customer = null;
+    private static MovieTicketBooking.MovieTicketBookingInterface customer = null;
 
     //method displaying main menu
     private void displayMainMenu() {
