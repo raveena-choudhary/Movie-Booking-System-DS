@@ -13,7 +13,9 @@ import java.rmi.RemoteException;
 public class VerdunServer implements ServerInterface {
 
 	private static final int portNum = 7001;
-	private static final String registryURL = "rmi://localhost:" + portNum + "/verdun";
+
+	private static final String HOSTNAME="192.168.124.47";
+	private static final String registryURL = "rmi://" +  HOSTNAME +":" + portNum + "/verdun";
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
 
@@ -22,7 +24,7 @@ public class VerdunServer implements ServerInterface {
 	public static Admin user = null;
 	public static void main(String[] args) throws RemoteException {
 		VerdunServer verdunServer = new VerdunServer();
-		user = new Admin(verdunServer.movieDB,"localhost",String.valueOf(portNum));
+		user = new Admin(verdunServer.movieDB,HOSTNAME,String.valueOf(portNum));
 		LOGGER.info("Pre-defined users setup started for server");
 		verdunServer.setupUsers();
 		LOGGER.info("Pre-defined users setup done for server");

@@ -1,7 +1,7 @@
 *.class
 *.txt
 *.lck
-*.log
+/*.log
 # out/
 # logs/*
 target/

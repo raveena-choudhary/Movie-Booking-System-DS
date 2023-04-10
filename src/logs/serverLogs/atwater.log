@@ -9395,6 +9395,76 @@
 2023-04-09 18:04:37 INFO  atwater -[RMI TCP Connection(2)-172.30.68.65] - Sending request to get all movies booked by customer ATWC2222 on Outremont Server ...
 2023-04-09 18:04:37 INFO  atwater -[RMI TCP Connection(2)-172.30.68.65] - Response received from Outremont server  ...
 2023-04-09 18:04:37 INFO  atwater -[RMI TCP Connection(2)-172.30.68.65] - Response received from Outremont server  ...
+<<<<<<< HEAD
+2023-04-10 12:07:32 INFO  atwater -[main] - Setup user started
+2023-04-10 12:07:32 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:07:32 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:07:32 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 12:19:38 INFO  atwater -[main] - Setup user started
+2023-04-10 12:19:38 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:19:38 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:19:38 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 12:26:58 INFO  atwater -[main] - Setup user started
+2023-04-10 12:26:58 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:26:58 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:26:58 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 12:39:38 INFO  atwater -[main] - Setup user started
+2023-04-10 12:39:38 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:39:38 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:39:38 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 12:42:49 INFO  atwater -[main] - Setup user started
+2023-04-10 12:42:49 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:42:49 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:42:49 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 12:44:26 INFO  atwater -[main] - Setup user started
+2023-04-10 12:44:26 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:44:26 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:44:26 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 12:59:23 INFO  atwater -[main] - Setup user started
+2023-04-10 12:59:23 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 12:59:23 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 12:59:23 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 13:02:11 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:02:11 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Response from verdun :  
+2023-04-10 13:02:11 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:02:11 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Response from outremont :  
+2023-04-10 13:03:06 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:03:06 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Response from verdun :  
+2023-04-10 13:03:06 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:03:06 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Response from outremont :  
+2023-04-10 13:04:09 INFO  atwater -[main] - Setup user started
+2023-04-10 13:04:09 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 13:04:09 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 13:04:09 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 13:06:15 INFO  atwater -[RMI TCP Connection(2)-192.168.186.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:06:15 INFO  atwater -[RMI TCP Connection(2)-192.168.186.63] - Response from verdun :  
+2023-04-10 13:06:15 INFO  atwater -[RMI TCP Connection(2)-192.168.186.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:06:15 INFO  atwater -[RMI TCP Connection(2)-192.168.186.63] - Response from outremont :  
+2023-04-10 13:06:36 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:06:36 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Response from verdun :  
+2023-04-10 13:06:36 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:06:36 INFO  atwater -[RMI TCP Connection(4)-192.168.186.63] - Response from outremont :  
+2023-04-10 13:07:01 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:07:01 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Response from verdun :  
+2023-04-10 13:07:01 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:07:01 INFO  atwater -[RMI TCP Connection(6)-192.168.186.63] - Response from outremont :  
+2023-04-10 13:20:06 INFO  atwater -[main] - Setup user started
+2023-04-10 13:20:06 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 13:20:06 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 13:20:06 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 13:26:25 INFO  atwater -[main] - Setup user started
+2023-04-10 13:26:25 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 13:26:25 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 13:26:25 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 13:42:24 INFO  atwater -[main] - Setup user started
+2023-04-10 13:42:24 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 13:42:24 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 13:42:24 INFO  atwater -[main] - Atwater server started at port: 6000
+2023-04-10 13:44:23 INFO  atwater -[main] - Setup user started
+2023-04-10 13:44:23 INFO  atwater -[main] - Pre-defined users setup started for server
+2023-04-10 13:44:23 INFO  atwater -[main] - Pre-defined users setup done for server
+2023-04-10 13:44:23 INFO  atwater -[main] - Atwater server started at port: 6000
+=======
 2023-04-10 12:07:48 INFO  atwater -[main] - Setup user started
 2023-04-10 12:07:48 INFO  atwater -[main] - Pre-defined users setup started for server
 2023-04-10 12:07:48 INFO  atwater -[main] - Pre-defined users setup done for server
@@ -9672,6 +9742,7 @@
 2023-04-10 13:40:37 INFO  atwater -[main] - Pre-defined users setup started for server
 2023-04-10 13:40:37 INFO  atwater -[main] - Pre-defined users setup done for server
 2023-04-10 13:40:37 INFO  atwater -[main] - Atwater server started at port: 5000
+>>>>>>> 21febfe794aa39f9eae9c3de078663a6cacfdc5c
 2023-04-10 13:45:37 INFO  atwater -[main] - Request received
 2023-04-10 13:45:37 INFO  atwater -[main] - Movies available on all locations: pink
 2023-04-10 13:45:37 INFO  atwater -[main] - Response sent after getting movies from all locations: pink
@@ -9681,6 +9752,18 @@
 2023-04-10 13:45:52 INFO  atwater -[main] - Request received
 2023-04-10 13:45:52 INFO  atwater -[main] - Movies booked by customer VERC7075 are: 
 2023-04-10 13:45:52 INFO  atwater -[main] - Response sent for all movies booked by customer with id: VERC7075
+<<<<<<< HEAD
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Sending request to check movie Booked with pink on Atwater Server ...
+2023-04-10 13:45:52 INFO  atwater -[main] - Request received
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Response received from Atwater Server ...
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Response received from Atwater Server ...
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Sending Request to Atwater server for verifying user id VERC7075..
+2023-04-10 13:45:52 INFO  atwater -[main] - Request received
+2023-04-10 13:45:52 INFO  atwater -[main] - Verifying user VERC7075 exists on server...
+2023-04-10 13:45:52 INFO  atwater -[main] - No user found with user id: VERC7075
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Response received from Atwater server false..
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Sending request to book ticket for movie pink on Atwater Server ...
+=======
 2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Sending request to check movie Booked with pink on Atwater Server ...
 2023-04-10 13:45:52 INFO  atwater -[main] - Request received
 2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Response received from Atwater Server ...
@@ -9691,6 +9774,7 @@
 2023-04-10 13:45:52 INFO  atwater -[main] - No user found with user id: VERC7075
 2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Response received from Atwater server false..
 2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Sending request to book ticket for movie pink on Atwater Server ...
+>>>>>>> 21febfe794aa39f9eae9c3de078663a6cacfdc5c
 2023-04-10 13:45:52 INFO  atwater -[main] - Request received
 2023-04-10 13:45:52 INFO  atwater -[main] - Sending request to get all movies booked by customer VERC7075 on Verdun Server ...
 2023-04-10 13:45:52 INFO  atwater -[main] - Response received from Verdun server  ...
@@ -9698,6 +9782,50 @@
 2023-04-10 13:45:52 INFO  atwater -[main] - Response received from Outremont server  ...
 2023-04-10 13:45:52 INFO  atwater -[main] - Movie booked for customer VERC7075? : Movie booked successfully!
 2023-04-10 13:45:52 INFO  atwater -[main] - Response sent after booking movie pinkfor customer: VERC7075
+<<<<<<< HEAD
+2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.63] - Response from atwater : Movie booked successfully! 
+2023-04-10 13:46:03 INFO  atwater -[RMI TCP Connection(4)-192.168.124.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:46:03 INFO  atwater -[RMI TCP Connection(4)-192.168.124.63] - Response from verdun :  
+2023-04-10 13:46:03 INFO  atwater -[RMI TCP Connection(4)-192.168.124.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:46:03 INFO  atwater -[RMI TCP Connection(4)-192.168.124.63] - Response from outremont :  
+2023-04-10 13:46:33 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:46:33 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Response from verdun :  
+2023-04-10 13:46:33 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:46:33 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Response from outremont :  
+2023-04-10 13:46:58 INFO  atwater -[main] - Request received
+2023-04-10 13:46:58 INFO  atwater -[main] - Movies booked by customer VERC7075 are: pink:ATWATER MORNING 100423 2,
+2023-04-10 13:46:58 INFO  atwater -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:15 INFO  atwater -[main] - Request received
+2023-04-10 13:47:15 INFO  atwater -[main] - Movies booked by customer VERC7075 are: pink:ATWATER MORNING 100423 2,
+2023-04-10 13:47:15 INFO  atwater -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:28 INFO  atwater -[main] - Request received
+2023-04-10 13:47:28 INFO  atwater -[main] - Movies available on all locations: pink
+2023-04-10 13:47:28 INFO  atwater -[main] - Response sent after getting movies from all locations: pink
+2023-04-10 13:47:30 INFO  atwater -[main] - Request received
+2023-04-10 13:47:30 INFO  atwater -[main] - Movie Ids available for a movie: ATWM100423
+2023-04-10 13:47:30 INFO  atwater -[main] - Response sent after getting movieIds for a movie: ATWM100423
+2023-04-10 13:47:35 INFO  atwater -[main] - Request received
+2023-04-10 13:47:35 INFO  atwater -[main] - Movies booked by customer VERC7075 are: pink:ATWATER MORNING 100423 2,
+2023-04-10 13:47:35 INFO  atwater -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:35 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Sending request to check movie Booked with pink on Atwater Server ...
+2023-04-10 13:47:35 INFO  atwater -[main] - Request received
+2023-04-10 13:47:35 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Response received from Atwater Server ...
+2023-04-10 13:47:45 INFO  atwater -[main] - Request received
+2023-04-10 13:47:45 INFO  atwater -[main] - Movies booked by customer VERC7075 are: pink:ATWATER MORNING 100423 2,
+2023-04-10 13:47:45 INFO  atwater -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:51 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Sending request to cancel ticket for movie pink on Atwater Server ...
+2023-04-10 13:47:51 INFO  atwater -[main] - Request received
+2023-04-10 13:47:51 INFO  atwater -[main] - Movie cancelled for customer VERC7075? : Booking cancelled successfully!
+2023-04-10 13:47:51 INFO  atwater -[main] - Response sent after cancelling movie pinkfor customer: VERC7075
+2023-04-10 13:47:51 INFO  atwater -[RMI TCP Connection(6)-192.168.124.63] - Response received from Atwater Server ...
+2023-04-10 13:47:53 INFO  atwater -[main] - Request received
+2023-04-10 13:47:53 INFO  atwater -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:47:53 INFO  atwater -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(8)-192.168.124.63] - Sending request to get all pink shows from Verdun Server ...
+2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(8)-192.168.124.63] - Response from verdun :  
+2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(8)-192.168.124.63] - Sending request to get all pink shows from Outremont Server...
+2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(8)-192.168.124.63] - Response from outremont :  
+=======
 2023-04-10 13:45:52 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Response from atwater : Movie booked successfully! 
 2023-04-10 13:46:03 INFO  atwater -[RMI TCP Connection(4)-192.168.124.235] - Sending request to get all pink shows from Verdun Server ...
 2023-04-10 13:46:03 INFO  atwater -[RMI TCP Connection(4)-192.168.124.235] - Response from verdun :  
@@ -9771,3 +9899,4 @@
 2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Response from verdun :  
 2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Sending request to get all pink shows from Outremont Server...
 2023-04-10 13:47:59 INFO  atwater -[RMI TCP Connection(2)-192.168.124.235] - Response from outremont :  
+>>>>>>> 21febfe794aa39f9eae9c3de078663a6cacfdc5c

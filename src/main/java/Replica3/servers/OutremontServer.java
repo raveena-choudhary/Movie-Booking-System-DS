@@ -16,14 +16,16 @@ public class OutremontServer implements ServerInterface {
 	private static final int portNum = 7002;
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
-	private static final String registryURL = "rmi://localhost:" + portNum + "/outremont";
+
+	private static final String HOSTNAME="192.168.124.47";
+	private static final String registryURL = "rmi://" +  HOSTNAME +":" + portNum + "/outremont";
 
 	public static Admin user = null;
 
 	public static void main(String[] args) throws RemoteException {
 
 		OutremontServer outremontServer = new OutremontServer();
-		user = new Admin(outremontServer.movieDB,"localhost",String.valueOf(portNum));
+		user = new Admin(outremontServer.movieDB,HOSTNAME,String.valueOf(portNum));
 		LOGGER.info("Pre-defined users setup started for server");
 		outremontServer.setupUsers();
 		LOGGER.info("Pre-defined users setup done for server");
