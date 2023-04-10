@@ -1,5 +1,4 @@
 package Replica2.servers;
-
 import Replica2.movieTicketBookingSystem.user.Admin;
 import Replica2.util.db.LoginDBMovieTicketSystem;
 import Replica2.util.db.MovieTicketBookingDB;
@@ -9,8 +8,6 @@ import util.login.UserInfo;
 
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
-
-
 //Server program
 public class AtwaterServer implements ServerInterface {
 
@@ -18,7 +15,9 @@ public class AtwaterServer implements ServerInterface {
 	private static final int portNum = 6000;
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
-	private static final String registryURL = "rmi://localhost:" + portNum + "/atwater";
+
+	private static final String HOSTNAME= "192.168.124.63";
+	private static final String registryURL = "rmi://" + HOSTNAME + ":" + portNum + "/atwater";
 
 	public static Admin user = null;
 
@@ -28,7 +27,7 @@ public class AtwaterServer implements ServerInterface {
 //		BufferedReader br = new BufferedReader(is);
 
 		AtwaterServer atwaterServer = new AtwaterServer();
-		user = new Admin(atwaterServer.movieDB,"localhost",String.valueOf(portNum)); // this is created to access method in User class
+		user = new Admin(atwaterServer.movieDB,HOSTNAME,String.valueOf(portNum)); // this is created to access method in User class
 
 		LOGGER.info("Setup user started");
 		LOGGER.info("Pre-defined users setup started for server");

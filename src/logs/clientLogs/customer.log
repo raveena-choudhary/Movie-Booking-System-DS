@@ -1365,3 +1365,17 @@
 2023-04-09 18:03:07 INFO  customer -[main] - request to bookMovieTickets: Movie booked successfully!
 2023-04-09 18:03:22 INFO  customer -[main] - request to getBookingSchedule: Avatar:ATWATER MORNING 100423 10
 2023-04-09 18:04:37 INFO  customer -[main] - request to getBookingSchedule: Avatar:ATWATER MORNING 100423 10
+2023-04-10 12:46:14 INFO  customer -[main] - VERC1234connection to server open...
+2023-04-10 12:47:05 INFO  customer -[main] - request to bookMovieTickets: Please check customerID, it does not exist in system.
+2023-04-10 12:47:16 INFO  customer -[main] - User: VERC1234 is no longer active
+2023-04-10 12:47:42 INFO  customer -[main] - VERC7075connection to server open...
+2023-04-10 12:48:28 INFO  customer -[main] - request to bookMovieTickets: Movie booked successfully!
+2023-04-10 12:48:42 INFO  customer -[main] - request to getBookingSchedule: pink:ATWATER MORNING 100423 2
+2023-04-10 13:28:01 INFO  customer -[main] - VERC7075connection to server open...
+2023-04-10 13:28:46 INFO  customer -[main] - request to bookMovieTickets: Movie booked successfully!
+2023-04-10 13:45:36 INFO  customer -[main] - VERC7075connection to server open...
+2023-04-10 13:45:52 INFO  customer -[main] - request to bookMovieTickets: Movie booked successfully!
+2023-04-10 13:47:15 INFO  customer -[main] - request to getBookingSchedule: pink:ATWATER MORNING 100423 2
+2023-04-10 13:47:35 INFO  customer -[main] - request to bookMovieTickets: Movie already booked for same slot or with same name
+2023-04-10 13:47:51 INFO  customer -[main] - request to cancelMovieTickets: Booking cancelled successfully!
+2023-04-10 13:47:53 INFO  customer -[main] - request to getBookingSchedule: No data found

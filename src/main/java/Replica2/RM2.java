@@ -22,7 +22,8 @@ public class RM2 {
     protected static final int VERDUN_SERVER_PORT = 6001;
     protected static final int OUTREMONT_SERVER_PORT = 6002;
 
-    private static final String HOSTNAME= "localhost";
+//    private static final String HOSTNAME= "localhost";
+    private static final String HOSTNAME= "192.168.124.63";
     private static int PORT=0;
 
     public static MovieTicketBookingInterface admin = null;
