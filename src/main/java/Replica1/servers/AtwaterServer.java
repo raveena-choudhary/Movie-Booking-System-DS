@@ -1,5 +1,6 @@
 package Replica1.servers;
 
+import Replica1.RM1;
 import Replica1.movieTicketBookingSystem.user.Admin;
 import Replica1.util.db.LoginDBMovieTicketSystem;
 import Replica1.util.db.MovieTicketBookingDB;
@@ -18,7 +19,8 @@ public class AtwaterServer implements ServerInterface {
 	private static final int portNum = 5000;
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
-	private static final String registryURL = "rmi://localhost:" + portNum + "/atwater";
+	private static final String registryURL = "rmi://"+
+	RM1.HOSTNAME+":" + portNum + "/atwater";
 
 	public static Admin user = null;
 

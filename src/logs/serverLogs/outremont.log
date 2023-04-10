@@ -7564,6 +7564,7 @@
 2023-04-09 18:04:37 INFO  outremont -[main] - Request received
 2023-04-09 18:04:37 INFO  outremont -[main] - Movies booked by customer ATWC2222 are: 
 2023-04-09 18:04:37 INFO  outremont -[main] - Response sent for all movies booked by customer with id: ATWC2222
+<<<<<<< HEAD
 2023-04-10 12:07:47 INFO  outremont -[main] - Pre-defined users setup started for server
 2023-04-10 12:07:47 INFO  outremont -[main] - Pre-defined users setup done for server
 2023-04-10 12:07:47 INFO  outremont -[main] - Starting Outremont Server ...
@@ -7615,6 +7616,232 @@
 2023-04-10 13:44:29 INFO  outremont -[main] - Pre-defined users setup started for server
 2023-04-10 13:44:29 INFO  outremont -[main] - Pre-defined users setup done for server
 2023-04-10 13:44:29 INFO  outremont -[main] - Starting Outremont Server ...
+=======
+2023-04-10 12:07:53 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:07:53 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:07:53 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:20:07 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:20:07 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:20:07 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:20:28 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:20:28 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:20:28 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:34:55 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:34:55 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:34:55 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:40:34 INFO  outremont -[Thread-6] - Pre-defined users setup started for server
+2023-04-10 12:40:34 INFO  outremont -[Thread-6] - Pre-defined users setup done for server
+2023-04-10 12:40:34 INFO  outremont -[Thread-6] - Starting Outremont Server ...
+2023-04-10 12:40:34 INFO  outremont -[Thread-6] - Outremont Server started
+2023-04-10 12:41:44 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:41:44 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:41:44 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:41:50 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:41:50 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:41:50 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:44:23 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:44:23 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:44:23 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:44:47 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:44:47 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:44:47 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 12:46:19 INFO  outremont -[main] - Request received
+2023-04-10 12:46:19 INFO  outremont -[main] - Movies available on all locations: 
+2023-04-10 12:46:19 INFO  outremont -[main] - Response sent after getting movies from all locations: 
+2023-04-10 12:46:30 INFO  outremont -[main] - Request received
+2023-04-10 12:46:30 INFO  outremont -[main] - Movie Ids available for a movie: 
+2023-04-10 12:46:30 INFO  outremont -[main] - Response sent after getting movieIds for a movie: 
+2023-04-10 12:46:55 INFO  outremont -[main] - Request received
+2023-04-10 12:46:55 INFO  outremont -[main] - Movies booked by customer VERC1234 are: 
+2023-04-10 12:46:55 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC1234
+2023-04-10 12:46:55 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 12:46:55 INFO  outremont -[main] - Request received
+2023-04-10 12:46:55 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:46:55 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:46:55 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC1234..
+2023-04-10 12:46:55 INFO  outremont -[main] - Request received
+2023-04-10 12:46:55 INFO  outremont -[main] - Verifying user VERC1234 exists on server...
+2023-04-10 12:46:55 INFO  outremont -[main] - No user found with user id: VERC1234
+2023-04-10 12:46:55 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont server false..
+2023-04-10 12:47:44 INFO  outremont -[main] - Request received
+2023-04-10 12:47:44 INFO  outremont -[main] - Movies available on all locations: 
+2023-04-10 12:47:44 INFO  outremont -[main] - Response sent after getting movies from all locations: 
+2023-04-10 12:47:56 INFO  outremont -[main] - Request received
+2023-04-10 12:47:56 INFO  outremont -[main] - Movie Ids available for a movie: 
+2023-04-10 12:47:56 INFO  outremont -[main] - Response sent after getting movieIds for a movie: 
+2023-04-10 12:48:18 INFO  outremont -[main] - Request received
+2023-04-10 12:48:18 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 12:48:18 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 12:48:18 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 12:48:18 INFO  outremont -[main] - Request received
+2023-04-10 12:48:18 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:48:18 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:48:18 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 12:48:18 INFO  outremont -[main] - Request received
+2023-04-10 12:48:18 INFO  outremont -[main] - Verifying user VERC7075 exists on server...
+2023-04-10 12:48:18 INFO  outremont -[main] - No user found with user id: VERC7075
+2023-04-10 12:48:18 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont server false..
+2023-04-10 12:48:18 INFO  outremont -[main] - Request received
+2023-04-10 12:48:18 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 12:48:18 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 12:48:32 INFO  outremont -[main] - Request received
+2023-04-10 12:48:32 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 12:48:32 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 12:48:48 INFO  outremont -[main] - Request received
+2023-04-10 12:48:48 INFO  outremont -[main] - Available shows for movie pink are: 
+2023-04-10 12:48:48 INFO  outremont -[main] - Response sent for available shows for movie: pink
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movies available on all locations: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent after getting movies from all locations: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movie Ids available for a movie: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent after getting movieIds for a movie: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movies booked by customer VERC1234 are: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC1234
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC1234..
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Verifying user VERC1234 exists on server...
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - No user found with user id: VERC1234
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont server false..
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movies available on all locations: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent after getting movies from all locations: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movie Ids available for a movie: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent after getting movieIds for a movie: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Verifying user VERC7075 exists on server...
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - User VERC7075
+2023-04-10 12:49:43 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont server true..
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Request received
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 12:49:43 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 12:58:41 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 12:58:41 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 12:58:41 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 13:00:20 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 13:00:20 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 13:00:20 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 13:03:06 INFO  outremont -[main] - Request received
+2023-04-10 13:03:06 INFO  outremont -[main] - Available shows for movie pink are: 
+2023-04-10 13:03:06 INFO  outremont -[main] - Response sent for available shows for movie: pink
+2023-04-10 13:03:06 INFO  outremont -[main] - Request received
+2023-04-10 13:03:06 INFO  outremont -[main] - Available shows for movie pink are: 
+2023-04-10 13:03:06 INFO  outremont -[main] - Response sent for available shows for movie: pink
+2023-04-10 13:03:06 INFO  outremont -[main] - Request received
+2023-04-10 13:03:06 INFO  outremont -[main] - Available shows for movie pink are: 
+2023-04-10 13:03:06 INFO  outremont -[main] - Response sent for available shows for movie: pink
+2023-04-10 13:03:53 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 13:03:53 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 13:03:53 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 13:06:15 INFO  outremont -[main] - Request received
+2023-04-10 13:06:15 INFO  outremont -[main] - Available shows for movie pink are: 
+2023-04-10 13:06:15 INFO  outremont -[main] - Response sent for available shows for movie: pink
+2023-04-10 13:06:40 INFO  outremont -[Thread-6] - Pre-defined users setup started for server
+2023-04-10 13:06:40 INFO  outremont -[Thread-6] - Pre-defined users setup done for server
+2023-04-10 13:06:40 INFO  outremont -[Thread-6] - Starting Outremont Server ...
+2023-04-10 13:06:45 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:06:45 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 13:06:45 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 13:06:45 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:06:45 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 13:06:45 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 13:07:01 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:07:01 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 13:07:01 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 13:12:14 INFO  outremont -[Thread-14] - Pre-defined users setup started for server
+2023-04-10 13:12:14 INFO  outremont -[Thread-14] - Pre-defined users setup done for server
+2023-04-10 13:12:14 INFO  outremont -[Thread-14] - Starting Outremont Server ...
+2023-04-10 13:12:14 INFO  outremont -[Thread-14] - Outremont Server started
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:12:19 INFO  outremont -[RMI TCP Connection(10)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:12:19 INFO  outremont -[RMI TCP Connection(10)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 13:12:19 INFO  outremont -[RMI TCP Connection(10)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 13:12:19 INFO  outremont -[RMI TCP Connection(10)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Verifying user VERC7075 exists on server...
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - User VERC7075
+2023-04-10 13:12:19 INFO  outremont -[RMI TCP Connection(10)-192.168.186.235] - Response received from Outremont server true..
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:12:19 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:19:49 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 13:19:49 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 13:19:49 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 13:21:37 INFO  outremont -[main] - Request received
+2023-04-10 13:21:37 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:21:37 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:21:37 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 13:21:37 INFO  outremont -[main] - Request received
+2023-04-10 13:21:37 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 13:21:37 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 13:21:37 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 13:21:37 INFO  outremont -[main] - Request received
+2023-04-10 13:21:37 INFO  outremont -[main] - Verifying user VERC7075 exists on server...
+2023-04-10 13:21:37 INFO  outremont -[main] - No user found with user id: VERC7075
+2023-04-10 13:21:37 INFO  outremont -[RMI TCP Connection(2)-192.168.186.235] - Response received from Outremont server false..
+2023-04-10 13:21:37 INFO  outremont -[main] - Request received
+2023-04-10 13:21:37 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:21:37 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:22:07 INFO  outremont -[main] - Request received
+2023-04-10 13:22:07 INFO  outremont -[main] - Available shows for movie pink are: 
+2023-04-10 13:22:07 INFO  outremont -[main] - Response sent for available shows for movie: pink
+2023-04-10 13:25:55 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 13:25:55 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 13:25:55 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 13:25:58 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 13:25:58 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 13:25:58 INFO  outremont -[main] - Starting Outremont Server ...
+2023-04-10 13:28:03 INFO  outremont -[main] - Request received
+2023-04-10 13:28:03 INFO  outremont -[main] - Movies available on all locations: 
+2023-04-10 13:28:03 INFO  outremont -[main] - Response sent after getting movies from all locations: 
+2023-04-10 13:28:14 INFO  outremont -[main] - Request received
+2023-04-10 13:28:14 INFO  outremont -[main] - Movie Ids available for a movie: 
+2023-04-10 13:28:14 INFO  outremont -[main] - Response sent after getting movieIds for a movie: 
+2023-04-10 13:28:36 INFO  outremont -[main] - Request received
+2023-04-10 13:28:36 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:28:36 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:28:36 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 13:28:36 INFO  outremont -[main] - Request received
+2023-04-10 13:28:36 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 13:28:36 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont Server ...
+2023-04-10 13:28:36 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 13:28:36 INFO  outremont -[main] - Request received
+2023-04-10 13:28:36 INFO  outremont -[main] - Verifying user VERC7075 exists on server...
+2023-04-10 13:28:36 INFO  outremont -[main] - No user found with user id: VERC7075
+2023-04-10 13:28:36 INFO  outremont -[RMI TCP Connection(4)-192.168.186.235] - Response received from Outremont server false..
+2023-04-10 13:28:36 INFO  outremont -[main] - Request received
+2023-04-10 13:28:36 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:28:36 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:40:24 INFO  outremont -[main] - Pre-defined users setup started for server
+2023-04-10 13:40:24 INFO  outremont -[main] - Pre-defined users setup done for server
+2023-04-10 13:40:24 INFO  outremont -[main] - Starting Outremont Server ...
+>>>>>>> 21febfe794aa39f9eae9c3de078663a6cacfdc5c
 2023-04-10 13:45:37 INFO  outremont -[main] - Request received
 2023-04-10 13:45:37 INFO  outremont -[main] - Movies available on all locations: 
 2023-04-10 13:45:37 INFO  outremont -[main] - Response sent after getting movies from all locations: 
@@ -7624,6 +7851,7 @@
 2023-04-10 13:45:52 INFO  outremont -[main] - Request received
 2023-04-10 13:45:52 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
 2023-04-10 13:45:52 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
+<<<<<<< HEAD
 2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.63] - Sending request to check movie Booked with pink on Outremont Server ...
 2023-04-10 13:45:52 INFO  outremont -[main] - Request received
 2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.63] - Response received from Outremont Server ...
@@ -7633,12 +7861,24 @@
 2023-04-10 13:45:52 INFO  outremont -[main] - Verifying user VERC7075 exists on server...
 2023-04-10 13:45:52 INFO  outremont -[main] - No user found with user id: VERC7075
 2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.63] - Response received from Outremont server false..
+=======
+2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 13:45:52 INFO  outremont -[main] - Request received
+2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Response received from Outremont Server ...
+2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Response received from Outremont Server ...
+2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 13:45:52 INFO  outremont -[main] - Request received
+2023-04-10 13:45:52 INFO  outremont -[main] - Verifying user VERC7075 exists on server...
+2023-04-10 13:45:52 INFO  outremont -[main] - No user found with user id: VERC7075
+2023-04-10 13:45:52 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Response received from Outremont server false..
+>>>>>>> 21febfe794aa39f9eae9c3de078663a6cacfdc5c
 2023-04-10 13:45:52 INFO  outremont -[main] - Request received
 2023-04-10 13:45:52 INFO  outremont -[main] - Movies booked by customer VERC7075 are: 
 2023-04-10 13:45:52 INFO  outremont -[main] - Response sent for all movies booked by customer with id: VERC7075
 2023-04-10 13:46:03 INFO  outremont -[main] - Request received
 2023-04-10 13:46:03 INFO  outremont -[main] - Available shows for movie pink are: 
 2023-04-10 13:46:03 INFO  outremont -[main] - Response sent for available shows for movie: pink
+<<<<<<< HEAD
 2023-04-10 13:46:33 INFO  outremont -[main] - Request received
 2023-04-10 13:46:33 INFO  outremont -[main] - Available shows for movie pink are: 
 2023-04-10 13:46:33 INFO  outremont -[main] - Response sent for available shows for movie: pink
@@ -7666,3 +7906,56 @@
 2023-04-10 13:47:59 INFO  outremont -[main] - Request received
 2023-04-10 13:47:59 INFO  outremont -[main] - Available shows for movie pink are: 
 2023-04-10 13:47:59 INFO  outremont -[main] - Response sent for available shows for movie: pink
+=======
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Movies available on all locations: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Response sent after getting movies from all locations: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Movie Ids available for a movie: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Response sent after getting movieIds for a movie: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:46:38 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Sending request to check movie Booked with pink on Outremont Server ...
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Response received from Outremont Server ...
+2023-04-10 13:46:38 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Response received from Outremont Server ...
+2023-04-10 13:46:38 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Sending Request to Outremont server for verifying user id VERC7075..
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Verifying user VERC7075 exists on server...
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - User VERC7075
+2023-04-10 13:46:38 INFO  outremont -[RMI TCP Connection(2)-192.168.124.235] - Response received from Outremont server true..
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 13:46:38 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+2023-04-10 13:46:58 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:46:58 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:46:58 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:15 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:15 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:47:15 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:28 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:28 INFO  outremont -[Thread-6] - Movies available on all locations: 
+2023-04-10 13:47:28 INFO  outremont -[Thread-6] - Response sent after getting movies from all locations: 
+2023-04-10 13:47:30 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:30 INFO  outremont -[Thread-6] - Movie Ids available for a movie: 
+2023-04-10 13:47:30 INFO  outremont -[Thread-6] - Response sent after getting movieIds for a movie: 
+2023-04-10 13:47:35 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:35 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:47:35 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:45 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:45 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:47:45 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:53 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:53 INFO  outremont -[Thread-6] - Movies booked by customer VERC7075 are: 
+2023-04-10 13:47:53 INFO  outremont -[Thread-6] - Response sent for all movies booked by customer with id: VERC7075
+2023-04-10 13:47:59 INFO  outremont -[Thread-6] - Request received
+2023-04-10 13:47:59 INFO  outremont -[Thread-6] - Available shows for movie pink are: 
+2023-04-10 13:47:59 INFO  outremont -[Thread-6] - Response sent for available shows for movie: pink
+>>>>>>> 21febfe794aa39f9eae9c3de078663a6cacfdc5c

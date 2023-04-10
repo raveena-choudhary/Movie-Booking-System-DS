@@ -1,0 +1,6 @@
+*.class
+*.txt
+*.lck
+*.log
+# out/
+# logs/*
