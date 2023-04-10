@@ -1360,3 +1360,8 @@
 2023-04-09 14:20:56 INFO  customer -[main] - request to exchangeMovieTickets: Error exchanging movie Tickets
 2023-04-09 14:20:59 INFO  customer -[main] - request to getBookingSchedule: pink:ATWATER MORNING 090423 2
 2023-04-09 14:21:04 INFO  customer -[main] - User: VERC7075 is no longer active
+2023-04-09 17:11:15 INFO  customer -[main] - ATWA1212connection to server open...
+2023-04-09 18:02:34 INFO  customer -[main] - ATWC2222connection to server open...
+2023-04-09 18:03:07 INFO  customer -[main] - request to bookMovieTickets: Movie booked successfully!
+2023-04-09 18:03:22 INFO  customer -[main] - request to getBookingSchedule: Avatar:ATWATER MORNING 100423 10
+2023-04-09 18:04:37 INFO  customer -[main] - request to getBookingSchedule: Avatar:ATWATER MORNING 100423 10

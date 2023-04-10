@@ -8021,3 +8021,150 @@
 2023-04-09 14:21:11 INFO  verdun -[main] - Available shows for movie pink are: 
 2023-04-09 14:21:11 INFO  verdun -[main] - Response sent for available shows for movie: pink
 2023-04-09 14:21:11 INFO  verdun -[main] - Response sent for available shows for movie: pink
+2023-04-09 17:01:06 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:01:06 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:01:06 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:01:12 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:01:12 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:01:12 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:01:19 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:01:19 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:01:19 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:08:33 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:08:33 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:08:33 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:08:39 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:08:39 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:08:39 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:08:47 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:08:47 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:08:47 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:11:41 INFO  verdun -[Thread-12] - Pre-defined users setup started for server
+2023-04-09 17:11:41 INFO  verdun -[Thread-12] - Pre-defined users setup done for server
+2023-04-09 17:11:41 INFO  verdun -[Thread-12] - Starting Verdun Server ...
+2023-04-09 17:11:41 INFO  verdun -[Thread-12] - Verdun Server started
+2023-04-09 17:13:50 INFO  verdun -[Thread-19] - Pre-defined users setup started for server
+2023-04-09 17:13:50 INFO  verdun -[Thread-19] - Pre-defined users setup done for server
+2023-04-09 17:13:50 INFO  verdun -[Thread-19] - Starting Verdun Server ...
+2023-04-09 17:13:50 INFO  verdun -[Thread-19] - Verdun Server started
+2023-04-09 17:13:55 INFO  verdun -[Thread-26] - Pre-defined users setup started for server
+2023-04-09 17:13:55 INFO  verdun -[Thread-26] - Pre-defined users setup done for server
+2023-04-09 17:13:55 INFO  verdun -[Thread-26] - Starting Verdun Server ...
+2023-04-09 17:13:55 INFO  verdun -[Thread-26] - Verdun Server started
+2023-04-09 17:15:41 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:15:41 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:15:41 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:15:51 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:15:51 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:15:51 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:16:01 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:16:01 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:16:01 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:55:21 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:55:21 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:55:21 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:55:31 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:55:31 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:55:31 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:55:40 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:55:40 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:55:40 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:56:50 INFO  verdun -[main] - Request received
+2023-04-09 17:56:50 INFO  verdun -[main] - Request received
+2023-04-09 17:56:50 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 17:56:50 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 17:56:50 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 17:56:50 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 17:56:50 INFO  verdun -[main] - Request received
+2023-04-09 17:56:50 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 17:56:50 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 17:58:39 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:58:39 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:58:39 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:58:53 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:58:53 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:58:53 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 17:59:02 INFO  verdun -[main] - Pre-defined users setup started for server
+2023-04-09 17:59:02 INFO  verdun -[main] - Pre-defined users setup done for server
+2023-04-09 17:59:02 INFO  verdun -[main] - Starting Verdun Server ...
+2023-04-09 18:02:18 INFO  verdun -[main] - Request received
+2023-04-09 18:02:18 INFO  verdun -[main] - Request received
+2023-04-09 18:02:18 INFO  verdun -[main] - Request received
+2023-04-09 18:02:18 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 18:02:18 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 18:02:18 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 18:02:18 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 18:02:18 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 18:02:18 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 18:02:36 INFO  verdun -[main] - Request received
+2023-04-09 18:02:36 INFO  verdun -[main] - Request received
+2023-04-09 18:02:36 INFO  verdun -[main] - Request received
+2023-04-09 18:02:36 INFO  verdun -[main] - Movies available on all locations: 
+2023-04-09 18:02:36 INFO  verdun -[main] - Response sent after getting movies from all locations: 
+2023-04-09 18:02:36 INFO  verdun -[main] - Movies available on all locations: 
+2023-04-09 18:02:36 INFO  verdun -[main] - Response sent after getting movies from all locations: 
+2023-04-09 18:02:36 INFO  verdun -[main] - Movies available on all locations: 
+2023-04-09 18:02:36 INFO  verdun -[main] - Response sent after getting movies from all locations: 
+2023-04-09 18:02:39 INFO  verdun -[main] - Request received
+2023-04-09 18:02:39 INFO  verdun -[main] - Request received
+2023-04-09 18:02:39 INFO  verdun -[main] - Movie Ids available for a movie: 
+2023-04-09 18:02:39 INFO  verdun -[main] - Response sent after getting movieIds for a movie: 
+2023-04-09 18:02:39 INFO  verdun -[main] - Movie Ids available for a movie: 
+2023-04-09 18:02:39 INFO  verdun -[main] - Response sent after getting movieIds for a movie: 
+2023-04-09 18:02:39 INFO  verdun -[main] - Request received
+2023-04-09 18:02:39 INFO  verdun -[main] - Movie Ids available for a movie: 
+2023-04-09 18:02:39 INFO  verdun -[main] - Response sent after getting movieIds for a movie: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:07 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Sending request to check movie Booked with Avatar on Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Sending request to check movie Booked with Avatar on Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Response received from Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Sending request to check movie Booked with Avatar on Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Response received from Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Response received from Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Response received from Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Response received from Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[RMI TCP Connection(4)-172.30.68.65] - Response received from Verdun Server ...
+2023-04-09 18:03:07 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:07 INFO  verdun -[main] - Request received
+2023-04-09 18:03:07 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:07 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:15 INFO  verdun -[main] - Request received
+2023-04-09 18:03:15 INFO  verdun -[main] - Request received
+2023-04-09 18:03:15 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 18:03:15 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 18:03:15 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 18:03:15 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 18:03:15 INFO  verdun -[main] - Request received
+2023-04-09 18:03:15 INFO  verdun -[main] - Available shows for movie Avatar are: 
+2023-04-09 18:03:15 INFO  verdun -[main] - Response sent for available shows for movie: Avatar
+2023-04-09 18:03:22 INFO  verdun -[main] - Request received
+2023-04-09 18:03:22 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:22 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:22 INFO  verdun -[main] - Request received
+2023-04-09 18:03:22 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:22 INFO  verdun -[main] - Request received
+2023-04-09 18:03:22 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:03:22 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:03:22 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:04:37 INFO  verdun -[main] - Request received
+2023-04-09 18:04:37 INFO  verdun -[main] - Request received
+2023-04-09 18:04:37 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:04:37 INFO  verdun -[main] - Movies booked by customer ATWC2222 are: 
+2023-04-09 18:04:37 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222
+2023-04-09 18:04:37 INFO  verdun -[main] - Response sent for all movies booked by customer with id: ATWC2222

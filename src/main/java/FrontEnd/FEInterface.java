@@ -1,11 +1,11 @@
 package FrontEnd;
 
 public interface FEInterface {
-    void informRmHasBug(int RmNumber);
+    void informSoftwareFailureIn(int RmNumber);
 
-    void informRmIsDown(int RmNumber);
+    void InformReplicaDown(int RmNumber);
 
-    int sendRequestToSequencer(MyRequest myRequest);
+    int sendRequestToSequencer(Request request);
 
-    void retryRequest(MyRequest myRequest);
+    void retryRequest(Request request);
 }

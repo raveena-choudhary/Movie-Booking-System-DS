@@ -1,6 +1,8 @@
 package clients;
 /** @Author: Raveena Choudhary, 40232370 **/
 
+import FrontEnd.MovieTicketBooking.MovieTicketBookingInterface;
+import FrontEnd.MovieTicketBooking.MovieTicketBookingInterfaceHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.omg.CORBA.ORB;
@@ -30,7 +32,7 @@ public class CustomerClient {
 //    private static final String VERDUN_SERVER_PORT = "5001";
 //    private static final String OUTREMONT_SERVER_PORT = "5002";
 
-    private static MovieTicketBooking.MovieTicketBookingInterface customer = null;
+    private static MovieTicketBookingInterface customer = null;
 
     //method displaying main menu
     private void displayMainMenu() {
@@ -53,7 +55,7 @@ public class CustomerClient {
 //				System.out.println("Please enter movie theatre(Atwater, Verdun, Outremont): ");
 //				String movieThreatre = sc.nextLine().toUpperCase().trim();
                 System.out.println("Please choose movieName: ");
-                List<String> movieNames = getListFromCommaSeparatedString(customer.getAllMovieNames());
+                List<String> movieNames = getListFromCommaSeparatedString(customer.getAllMovieNames(userName));
                 Set<String> distinctMovieNamesSet = movieNames.stream().collect(Collectors.toSet());
                 List<String> distinctMovieNamesList = new ArrayList<String>(distinctMovieNamesSet);
 
@@ -67,7 +69,7 @@ public class CustomerClient {
                 String movieName = distinctMovieNamesList.get(index - 1);
                 System.out.println("Selected movie name: " + movieName);
                 System.out.println("Please choose movie theatre: ");
-                List<String> movieIDs = getListFromCommaSeparatedString(customer.getAllMovieIds(movieName));
+                List<String> movieIDs = getListFromCommaSeparatedString(customer.getAllMovieIds(userName,movieName));
 
                 // print distinct values for theatre
                 Set<String> distinctMovieIdsSet = movieIDs.stream().map(movieId -> ServerEnum.getEnumNameForValue(movieId.substring(0, 3))).collect(Collectors.toSet());
@@ -201,7 +203,7 @@ public class CustomerClient {
 
                     //todo create a single method
                     System.out.println("Please choose new movieName: ");
-                    List<String> movieNames = getListFromCommaSeparatedString(customer.getAllMovieNames());
+                    List<String> movieNames = getListFromCommaSeparatedString(customer.getAllMovieNames(userName));
                     Set<String> distinctMovieNamesSet = movieNames.stream().collect(Collectors.toSet());
                     List<String> distinctMovieNamesList = new ArrayList<String>(distinctMovieNamesSet);
 
@@ -215,7 +217,7 @@ public class CustomerClient {
                     String new_movieName = distinctMovieNamesList.get(indexForNewMovie - 1);
 
                     System.out.println("Please choose movie theatre: ");
-                    List<String> movieIDs = getListFromCommaSeparatedString(customer.getAllMovieIds(new_movieName));
+                    List<String> movieIDs = getListFromCommaSeparatedString(customer.getAllMovieIds(userName,new_movieName));
 
                     // print distinct values for theatre
                     Set<String> distinctMovieIdsSet = movieIDs.stream().map(movieId -> ServerEnum.getEnumNameForValue(movieId.substring(0, 3))).collect(Collectors.toSet());
@@ -299,7 +301,7 @@ public class CustomerClient {
                     orb.resolve_initial_references("NameService");
             NamingContextExt ncRef =
                     NamingContextExtHelper.narrow(objRef);
-            customer = MovieTicketBooking.MovieTicketBookingInterfaceHelper.narrow(ncRef.resolve_str("FrontEnd"));
+            customer = MovieTicketBookingInterfaceHelper.narrow(ncRef.resolve_str("FrontEnd"));
 
             LOGGER.info(userName + "connection to server open...");
 
@@ -322,21 +324,21 @@ public class CustomerClient {
 
         connectToServer(args);
 
-        if (userName.substring(3,4).equals("C") && customer.validateUser(userName, password)) {
-            System.out.println("Login Successfull!");
-            LOGGER.info(userName + "Login Success...");
+//        if (userName.substring(3,4).equals("C") && customer.validateUser(userName, password)) {
+//            System.out.println("Login Successfull!");
+//            LOGGER.info(userName + "Login Success...");
             boolean flag = true;
             do {
                 client.displayMainMenu();
                 flag = client.getInputFromUser(userName, Integer.parseInt(sc.nextLine()));
 
             } while (flag);
-
-
-        } else {
-            System.out.println("Invalid Credentials, please check username and password.");
-            LOGGER.info(userName + "Invalid Credentials, please check username and password.");
-        }
+//
+//
+//        } else {
+//            System.out.println("Invalid Credentials, please check username and password.");
+//            LOGGER.info(userName + "Invalid Credentials, please check username and password.");
+//        }
 
     }
 

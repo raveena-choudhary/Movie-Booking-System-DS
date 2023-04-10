@@ -2,6 +2,8 @@ package clients;
 /** @Author: Raveena Choudhary, 40232370 **/
 
 
+import FrontEnd.MovieTicketBooking.MovieTicketBookingInterface;
+import FrontEnd.MovieTicketBooking.MovieTicketBookingInterfaceHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.omg.CORBA.ORB;
@@ -36,7 +38,7 @@ public class AdminClient {
 
 //    private static UserImplementation admin;
 
-    private static MovieTicketBooking.MovieTicketBookingInterface admin = null;
+    private static MovieTicketBookingInterface admin = null;
 
     public static void main(String[] args) throws MalformedURLException, NotBoundException, RemoteException {
 
@@ -55,14 +57,14 @@ public class AdminClient {
         connectToServer(args);
 
         //validate admin
-        if (userName.substring(3,4).equals("A") && admin.validateUser(userName, password)) {
-            System.out.println("Login Successfull!");
-            LOGGER.info(userName + "Login Success...");
-
-            //add sample movie slots for testing
-
-
-            //display menu to admin after successful login
+//        if (userName.substring(3,4).equals("A") && admin.validateUser(userName, password)) {
+//            System.out.println("Login Successfull!");
+//            LOGGER.info(userName + "Login Success...");
+//
+//            //add sample movie slots for testing
+//
+//
+//            //display menu to admin after successful login
             boolean flag = true;
             do {
 
@@ -71,10 +73,10 @@ public class AdminClient {
 
             }while(flag);
 
-        } else {
-            System.out.println("Invalid Credentials, please check username and password.");
-            LOGGER.info(userName + "Invalid Credentials, please check username and password.");
-        }
+//        } else {
+//            System.out.println("Invalid Credentials, please check username and password.");
+//            LOGGER.info(userName + "Invalid Credentials, please check username and password.");
+//        }
     }
 
     private static void connectToServer(String[] args) {
@@ -108,7 +110,7 @@ public class AdminClient {
                     NamingContextExtHelper.narrow(objRef);
 //            admin = MovieTicketBookingInterfaceHelper.narrow(ncRef.resolve_str("admin"));
             //System.out.println(ncRef.resolve_str("FrontEnd"));
-            admin = MovieTicketBooking.MovieTicketBookingInterfaceHelper.narrow(ncRef.resolve_str("FrontEnd"));
+            admin = MovieTicketBookingInterfaceHelper.narrow(ncRef.resolve_str("FrontEnd"));
 
             //admin.setPortAndHost(HOSTNAME,PORT);
             LOGGER.info(userName + "connection to server open...");
@@ -151,7 +153,7 @@ public class AdminClient {
                 int bookingCapacity = Integer.parseInt(sc.nextLine().trim());
                 String movieThreatre = tLocation.toUpperCase().trim();
                 Movie movie = new Movie(movieName, ServerEnum.valueOf(movieThreatre).value(), SlotEnum.valueOf(slot), date);
-                String response = admin.addMovieSlots(movie.getMovieId(),movieName,bookingCapacity);
+                String response = admin.addMovieSlots(userName,movie.getMovieId(),movieName,bookingCapacity);
                 System.out.println(response);
                 LOGGER.info("request to addMovieSlots: " + response);
                 break;
@@ -169,7 +171,7 @@ public class AdminClient {
                 String date = sc.nextLine().trim();
                 String movieThreatre = tLocation.toUpperCase().trim();
                 Movie movie = new Movie(movieName, ServerEnum.valueOf(movieThreatre).value(), SlotEnum.valueOf(slot), date);
-                String response = admin.removeMovieSlots(movie.getMovieId(),movieName);
+                String response = admin.removeMovieSlots(userName,movie.getMovieId(),movieName);
                 System.out.println(response);
                 LOGGER.info("request to removeMovieSlots: " + response);
                 break;
@@ -179,7 +181,7 @@ public class AdminClient {
             {
                 System.out.println("Please enter movieName: ");
                 String movieName = sc.nextLine().trim();
-                String response = admin.listMovieShowsAvailability(movieName);
+                String response = admin.listMovieShowsAvailability(userName,movieName);
                 if(response.equals(movieName+":"))
                 {
                     response = "No data found";
