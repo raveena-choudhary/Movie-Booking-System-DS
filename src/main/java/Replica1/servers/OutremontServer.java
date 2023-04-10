@@ -1,6 +1,7 @@
 /** @Author: Raveena Choudhary, 40232370 **/
 package Replica1.servers;
 
+import Replica1.RM1;
 import Replica1.movieTicketBookingSystem.user.Admin;
 import Replica1.util.db.LoginDBMovieTicketSystem;
 import Replica1.util.db.MovieTicketBookingDB;
@@ -17,7 +18,8 @@ public class OutremontServer implements ServerInterface {
 	private static final int portNum = 5002;
 	private MovieTicketBookingDB movieDB = new MovieTicketBookingDB();
 	private LoginDBMovieTicketSystem userDB = new LoginDBMovieTicketSystem();
-	private static final String registryURL = "rmi://localhost:" + portNum + "/outremont";
+	private static final String registryURL = "rmi://"+
+			RM1.HOSTNAME+":" + portNum +  "/outremont";
 
 	public static Admin user = null;
 

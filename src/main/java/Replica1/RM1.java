@@ -24,7 +24,7 @@ public class RM1 {
     protected static final int VERDUN_SERVER_PORT = 5001;
     protected static final int OUTREMONT_SERVER_PORT = 5002;
 
-    private static final String HOSTNAME = "localhost";
+     public static final String HOSTNAME = "192.168.124.235";
     private static int PORT = 0;
 
     public static MovieTicketBookingInterface admin = null;
@@ -193,6 +193,7 @@ public class RM1 {
                                 Runnable atw = () -> {
                                     try {
                                         AtwaterServer.main(new String[0]);
+                                        Thread.sleep(3000);
                                         //reboot Atwater Server
                                         Registry atwater_registry = LocateRegistry.getRegistry(ATWATER_SERVER_PORT);
                                         registryURL[0] = "rmi://" + HOSTNAME + ":" + ATWATER_SERVER_PORT + "/atwater";
@@ -209,6 +210,7 @@ public class RM1 {
                                 Runnable ver = () -> {
                                     try {
                                         VerdunServer.main(new String[0]);
+                                        Thread.sleep(3000);
                                         //reboot Verdun Server
                                         Registry verdun_registry = LocateRegistry.getRegistry(VERDUN_SERVER_PORT);
                                         registryURL[0] = "rmi://" + HOSTNAME + ":" + VERDUN_SERVER_PORT + "/verdun";
@@ -225,6 +227,7 @@ public class RM1 {
                                 Runnable out = () -> {
                                     try {
                                         OutremontServer.main(new String[0]);
+                                        Thread.sleep(3000);
                                         //reboot Outremont Server
                                         Registry outremont_registry = LocateRegistry.getRegistry(OUTREMONT_SERVER_PORT);
                                         registryURL[0] = "rmi://" + HOSTNAME + ":" + OUTREMONT_SERVER_PORT + "/outremont";
