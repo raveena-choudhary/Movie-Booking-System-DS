@@ -8,8 +8,8 @@ import java.net.SocketException;
 
 public class Sequencer {
 	private static int sequencerId = 0;
-	//private static final String sequencerIP = "192.168.2.17";
-  private static final String sequencerIP = "localhost";
+	private static final String sequencerIP = "192.168.124.63";
+//  private static final String sequencerIP = "localhost";
 
 	public static void main(String[] args) {
 		DatagramSocket aSocket = null;
